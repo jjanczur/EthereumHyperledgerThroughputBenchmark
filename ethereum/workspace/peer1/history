@@ -1,0 +1,2 @@
+eth.coinbase
+eth.getBalance(eth.coinbase)
