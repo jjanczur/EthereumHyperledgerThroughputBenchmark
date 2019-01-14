@@ -1,5 +1,0 @@
-﻿jobs:
-- name: sendTxTest1
-  send:
-      destination: PUT_HERE_ONE_ACCOUNT_OF_YOUR_GENESIS
-      amount: 42
