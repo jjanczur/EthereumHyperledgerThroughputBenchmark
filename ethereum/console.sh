@@ -1,6 +1,6 @@
 KEY=${sed '${ID}q;d' ./keys.txt}
 
-if[KEY = ""]
+if[$KEY = ""]
     echo "No key with the given ID found"
     exit 1
 fi
