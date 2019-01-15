@@ -1,11 +1,14 @@
-KEY=${sed '${ID}q;d' ./keys.txt}
+#!/bin/bash
 
-if[$KEY = ""]
+KEY=$(cat ./keys.txt | head -"$1" | tail -1)
+
+if [[ -z $KEY ]]
+then
     echo "No key with the given ID found"
     exit 1
 fi
 
-BOOTNODEID=${cat ./boot.key}
+BOOTNODEID=$(cat ./boot.key)
 
 # TODO: Get the public IP of the bootnode from its hostname
 BOOTNODEIP="18.194.232.161"
