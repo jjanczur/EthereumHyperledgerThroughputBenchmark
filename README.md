@@ -3,7 +3,7 @@
 #### Group D - Topic #3
 
 ## Topic:
-Etherium (private net) vs Hyperledger - Throughput for non-conflicting transactions
+Ethereum (private net) vs Hyperledger - Throughput for non-conflicting transactions
 
 ## Collaborators:
 
