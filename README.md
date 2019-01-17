@@ -1,8 +1,8 @@
 # Enterprise Computing Project
 
-#### **Group D - Topic #3**
+#### ** Group D - Topic #3 **
 
-## **Topic: **
+## ** Topic: **
 Etherium (private net) vs Hyperledger - Throughput for non-conflicting transactions
 
 ## **Collaborators:**
@@ -14,15 +14,15 @@ Etherium (private net) vs Hyperledger - Throughput for non-conflicting transacti
 | Julian Valentino Weigel  | 340560  | degreeno  | valewei@gmx.de  |
 | Kim Janik Jasun Herter  | 398731  | kimherter  | kim_herter@web.de  |
 
-## **Github repo:**
+## ** Github repo: **
 https://github.com/jjanczur/EthereumHyperledgerThroughputBenchmark.git
 
-## **Expectations: **
+## ** Expectations: **
 - Report
 - Poster - Template on ISIS
 - Presentation of poster during poster session
 
-## **Grading: **
+## ** Grading: **
 - Poster (document): 6 Points
 - Presentation during poster session: 4 Points
 - Engagement during feedback session: 3 Points - Done! 3 / 3
