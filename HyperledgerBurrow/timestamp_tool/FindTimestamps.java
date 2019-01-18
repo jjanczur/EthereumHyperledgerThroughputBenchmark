@@ -8,7 +8,7 @@ public class FindTimestamps
     public static String PATTERN_EXECUTION = "TxExecution in";
     public static String PATTERN_TIME = "\"time\":\"";
     public static String PATTERN_HASH = "\"tx_hash\":";
-    
+
     /**
      *  usage: javac FindTimestamps.java && java FindTimestamps out.json
      *
@@ -33,15 +33,19 @@ public class FindTimestamps
                     break;
                 int idx1 = s.indexOf(PATTERN_TIME, idx)+8;
                 int idx2 = s.indexOf("\"", idx1);
+                int idx3 = s.indexOf(PATTERN_HASH, idx)+11;
+                int idx4 = s.indexOf("\"", idx3);
                 indexList.add(idx);
                 System.out.println(s.substring(idx1, idx2));
+                System.out.println(s.substring(idx3, idx4));
+
                 //System.out.println(idx);
                 idx++;
             }
         }
         catch(Exception ex)
         {
-            
+
         }
     }
 }
