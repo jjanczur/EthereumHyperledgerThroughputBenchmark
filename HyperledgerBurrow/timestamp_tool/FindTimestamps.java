@@ -1,6 +1,8 @@
 import java.io.File;
 import java.nio.file.Files;
 import java.util.*;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class FindTimestamps
 {
@@ -8,6 +10,8 @@ public class FindTimestamps
     public static String PATTERN_EXECUTION = "TxExecution in";
     public static String PATTERN_TIME = "\"time\":\"";
     public static String PATTERN_HASH = "\"tx_hash\":";
+
+
 
     /**
      *  usage: javac FindTimestamps.java && java FindTimestamps out.json
@@ -21,6 +25,7 @@ public class FindTimestamps
         }
         try
         {
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSSSSSSS");
             File file = new File(args[0]);
             byte[] fileContent = Files.readAllBytes(file.toPath());
             String s = new String(fileContent);
@@ -28,7 +33,7 @@ public class FindTimestamps
             ArrayList<String> startTransactionTimeList = new ArrayList<String>();
             ArrayList<String> endTransactionTimeList = new ArrayList<String>();
             ArrayList<String> hashList = new ArrayList<String>();
-            ArrayList<Integer> executionTimeList = new ArrayList<Integer>();
+            ArrayList<Long> executionTimeList = new ArrayList<Long>();
             int idx = 0;
             while(true)
             {
@@ -59,19 +64,14 @@ public class FindTimestamps
             int count = 0;
             for (String object : hashList) {
               System.out.println("For Hash '" + object + "' the execution time was:");
-              int minStart = Integer.parseInt(startTransactionTimeList.get(count).substring(14,16));
-              int secStart = Integer.parseInt(startTransactionTimeList.get(count).substring(17,19));
-              int msecStart = Integer.parseInt(startTransactionTimeList.get(count).substring(20,29));
 
-              int minEnd = Integer.parseInt(endTransactionTimeList.get(count).substring(14,16));
-              if (minEnd == 0) //if there is a timejump from 59 to 00 - i consider that the ececution time will always be less than one minute!
-                minEnd=60;
-              int secEnd = Integer.parseInt(endTransactionTimeList.get(count).substring(17,19));
-              if (secEnd == 60) //if there is a timejump from 59 to 20
-                secStart = secStart - 60;
-              int msecEnd = Integer.parseInt(endTransactionTimeList.get(count).substring(20,29));
+              String startDateString = startTransactionTimeList.get(count).substring(0,10) + ' ' + startTransactionTimeList.get(count).substring(11,29);
+              Date startDate = format.parse(startDateString);
 
-              executionTimeList.add(60000*(minEnd-minStart)+1000*(secEnd-secStart)+msecEnd-msecStart);
+              String endDateString = endTransactionTimeList.get(count).substring(0,10) + ' ' + endTransactionTimeList.get(count).substring(11,29);
+              Date endDate = format.parse(endDateString);
+
+              executionTimeList.add(endDate.getTime() - startDate.getTime());
               System.out.println(executionTimeList.get(count) + "ms");
 
               count++;
