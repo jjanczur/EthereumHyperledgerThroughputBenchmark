@@ -13,4 +13,4 @@ BOOTNODEID=$(cat ./boot.key)
 # TODO: Get the public IP of the bootnode from its hostname
 BOOTNODEIP="18.195.130.226"
 
-geth --datadir "./node" --preload "./js/lib.js" --syncmode "full" --port 30300 --rpc --rpcport 8500 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes "enode://$BOOTNODEID@$BOOTNODEIP:30310" --networkid 42 --gasprice "1" --etherbase "$KEY" --unlock "$KEY" --password "./password.txt" console
+geth --metrics --datadir "./node" --preload "./js/lib.js" --syncmode "full" --port 30300 --rpc --rpcport 8500 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes "enode://$BOOTNODEID@$BOOTNODEIP:30310" --networkid 42 --gasprice "1" --etherbase "$KEY" --unlock "$KEY" --password "./password.txt" console
