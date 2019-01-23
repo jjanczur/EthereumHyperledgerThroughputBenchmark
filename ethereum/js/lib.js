@@ -11,6 +11,41 @@ function getBalance(acc)
     return web3.fromWei(eth.getBalance(acc));
 }
 
+function send(value)
+{
+	if (eth.coinbase==node0) {
+			return eth.sendTransaction({
+        		"from" : eth.coinbase,
+        		"to" : node1,
+        		"value" : web3.toWei(value, "ether")
+        	});
+	} else {
+		 	return eth.sendTransaction({
+       			"from" : eth.coinbase,
+        		"to" : node0,
+        		"value" : web3.toWei(value, "ether")
+       		});
+	}
+}
+
+function sendToNode0(value)
+{
+    return eth.sendTransaction({
+        "from" : eth.coinbase,
+        "to" : node0,
+        "value" : web3.toWei(value, "ether")
+        });
+}
+
+function sendToNode1(value)
+{
+    return eth.sendTransaction({
+        "from" : eth.coinbase,
+        "to" : node1,
+        "value" : web3.toWei(value, "ether")
+        });
+}
+
 function sendTransaction(to, value)
 {
     return eth.sendTransaction({
