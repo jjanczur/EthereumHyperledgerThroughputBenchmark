@@ -1,0 +1,16 @@
+######## miner - In this log we see that in block nr 237 is one transaction. Than that block in mined and at the end block reached canonical chain ######
+
+
+
+INFO [01-23|15:25:55.002] Commit new mining work                   number=237 sealhash=e93d75…993614 uncles=0 txs=1 gas=21000 fees=2.1e-14 elapsed=1.473ms
+INFO [01-23|15:25:57.002] Successfully sealed new block            number=237 sealhash=e93d75…993614 hash=55d9d7…cd561e elapsed=2.000s
+INFO [01-23|15:25:57.002] 🔗 block reached canonical chain          number=230 hash=c3745b…280fc3
+INFO [01-23|15:25:57.002] 🔨 mined potential block                  number=237 hash=55d9d7…cd561e
+
+...
+
+
+INFO [01-23|15:26:09.001] Commit new mining work                   number=244 sealhash=e6cf4a…b2478e uncles=0 txs=0 gas=0     fees=0       elapsed=374.92µs
+INFO [01-23|15:26:11.000] Successfully sealed new block            number=244 sealhash=e6cf4a…b2478e hash=66bf33…0abad0 elapsed=1.998s
+INFO [01-23|15:26:11.000] 🔗 block reached canonical chain          number=237 hash=55d9d7…cd561e
+INFO [01-23|15:26:11.001] 🔨 mined potential block                  number=244 hash=66bf33…0abad0

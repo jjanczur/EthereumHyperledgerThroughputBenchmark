@@ -1,0 +1,8 @@
+###### Sender in this log we see that transaction is subitted and 4s later new chain segment is omported #####
+
+> send(1)
+
+INFO [01-23|15:25:53.530] Submitted transaction                    fullhash=0xbfffc7936b76342a4bbbeb2a86c6905bb2cac1587f8b2d5dfdf32d7fce76133a recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+"0xbfffc7936b76342a4bbbeb2a86c6905bb2cac1587f8b2d5dfdf32d7fce76133a"
+
+INFO [01-23|15:25:57.003] Imported new chain segment               blocks=1 txs=1 mgas=0.021 elapsed=1.172ms   mgasps=17.907 number=237 hash=55d9d7…cd561e cache=1.20kB
