@@ -11,6 +11,13 @@ function getBalance(acc)
     return web3.fromWei(eth.getBalance(acc));
 }
 
+function crazySend(value){
+        for(i=0; i<value; i++){
+                send(1);
+        }
+}
+
+
 function send(value)
 {
 	if (eth.coinbase==node1) {
