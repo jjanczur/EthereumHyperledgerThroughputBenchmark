@@ -68,16 +68,16 @@ ValidatorAddress = "7E8F90C13E690D775E54C9849FCB47E7A0A4CF5D"
 [RPC]
   [RPC.Info]
     Enabled = true
-    ListenAddress = "tcp://127.0.0.1:26658"
+    ListenAddress = "tcp://0.0.0.0:26658"
   [RPC.Profiler]
     Enabled = false
-    ListenAddress = "tcp://127.0.0.1:6060"
+    ListenAddress = "tcp://0.0.0.0:6060"
   [RPC.GRPC]
     Enabled = true
-    ListenAddress = "127.0.0.1:10997"
+    ListenAddress = "0.0.0.0:10997"
   [RPC.Metrics]
     Enabled = false
-    ListenAddress = "tcp://127.0.0.1:9102"
+    ListenAddress = "tcp://0.0.0.0:9102"
     MetricsPath = "/metrics"
     BlockSampleSize = 100
 

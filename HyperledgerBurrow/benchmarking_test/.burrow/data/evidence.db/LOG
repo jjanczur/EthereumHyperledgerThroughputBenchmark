@@ -1,0 +1,52 @@
+=============== Jan 25, 2019 (CET) ===============
+20:59:25.605176 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:59:25.671167 db@open opening
+20:59:25.672002 version@stat F·[] S·0B[] Sc·[]
+20:59:25.716443 db@janitor F·2 G·0
+20:59:25.716565 db@open done T·45.310542ms
+20:59:26.497396 db@close closing
+20:59:26.497478 db@close done T·72.599µs
+=============== Jan 25, 2019 (CET) ===============
+22:27:16.185194 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:27:16.185426 version@stat F·[] S·0B[] Sc·[]
+22:27:16.185442 db@open opening
+22:27:16.185514 journal@recovery F·1
+22:27:16.186514 journal@recovery recovering @1
+22:27:16.187055 version@stat F·[] S·0B[] Sc·[]
+22:27:16.319357 db@janitor F·2 G·0
+22:27:16.319454 db@open done T·133.991621ms
+22:28:48.610104 db@close closing
+22:28:48.610160 db@close done T·49.227µs
+=============== Jan 25, 2019 (CET) ===============
+22:29:00.511628 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:29:00.512108 version@stat F·[] S·0B[] Sc·[]
+22:29:00.512143 db@open opening
+22:29:00.512345 journal@recovery F·1
+22:29:00.516267 journal@recovery recovering @2
+22:29:00.516625 version@stat F·[] S·0B[] Sc·[]
+22:29:00.844942 db@janitor F·2 G·0
+22:29:00.845031 db@open done T·332.863145ms
+22:30:14.102930 db@close closing
+22:30:14.103098 db@close done T·162.52µs
+=============== Jan 25, 2019 (CET) ===============
+22:30:41.215284 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:30:41.215640 version@stat F·[] S·0B[] Sc·[]
+22:30:41.215668 db@open opening
+22:30:41.215786 journal@recovery F·1
+22:30:41.216020 journal@recovery recovering @4
+22:30:41.219538 version@stat F·[] S·0B[] Sc·[]
+22:30:41.337833 db@janitor F·2 G·0
+22:30:41.337923 db@open done T·122.234147ms
+22:30:46.663043 db@close closing
+22:30:46.663288 db@close done T·236.675µs
+=============== Jan 25, 2019 (CET) ===============
+22:33:12.394246 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:33:12.394721 version@stat F·[] S·0B[] Sc·[]
+22:33:12.394755 db@open opening
+22:33:12.394897 journal@recovery F·1
+22:33:12.400122 journal@recovery recovering @6
+22:33:12.400932 version@stat F·[] S·0B[] Sc·[]
+22:33:12.526405 db@janitor F·2 G·0
+22:33:12.526489 db@open done T·131.710678ms
+22:33:52.249837 db@close closing
+22:33:52.249944 db@close done T·108.1µs

@@ -1,0 +1,55 @@
+=============== Jan 25, 2019 (CET) ===============
+20:59:25.250731 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:59:25.311273 db@open opening
+20:59:25.312128 version@stat F·[] S·0B[] Sc·[]
+20:59:25.356366 db@janitor F·2 G·0
+20:59:25.356450 db@open done T·45.117114ms
+20:59:26.497023 db@close closing
+20:59:26.497240 db@close done T·215.014µs
+=============== Jan 25, 2019 (CET) ===============
+22:27:15.840107 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:27:15.840444 version@stat F·[] S·0B[] Sc·[]
+22:27:15.840474 db@open opening
+22:27:15.840602 journal@recovery F·1
+22:27:15.841372 journal@recovery recovering @1
+22:27:15.841703 version@stat F·[] S·0B[] Sc·[]
+22:27:15.970752 db@janitor F·2 G·0
+22:27:15.970836 db@open done T·130.34006ms
+22:28:48.609640 db@close closing
+22:28:48.609819 db@close done T·171.982µs
+=============== Jan 25, 2019 (CET) ===============
+22:29:00.039370 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:29:00.039542 version@stat F·[] S·0B[] Sc·[]
+22:29:00.039556 db@open opening
+22:29:00.039625 journal@recovery F·1
+22:29:00.039979 journal@recovery recovering @2
+22:29:00.092256 memdb@flush created L0@4 N·450 S·60KiB ",v450":"blo..ore,v5"
+22:29:00.092618 version@stat F·[1] S·60KiB[60KiB] Sc·[0.25]
+22:29:00.216965 db@janitor F·3 G·0
+22:29:00.217049 db@open done T·177.476023ms
+22:30:14.102261 db@close closing
+22:30:14.102575 db@close done T·308.463µs
+=============== Jan 25, 2019 (CET) ===============
+22:30:40.784189 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:30:40.784412 version@stat F·[1] S·60KiB[60KiB] Sc·[0.25]
+22:30:40.784430 db@open opening
+22:30:40.784511 journal@recovery F·1
+22:30:40.784627 journal@recovery recovering @5
+22:30:40.840015 memdb@flush created L0@7 N·354 S·47KiB ",v805":"blo..ore,v456"
+22:30:40.840620 version@stat F·[2] S·107KiB[107KiB] Sc·[0.50]
+22:30:40.954757 db@janitor F·4 G·0
+22:30:40.954842 db@open done T·170.396572ms
+22:30:46.662383 db@close closing
+22:30:46.662683 db@close done T·289.893µs
+=============== Jan 25, 2019 (CET) ===============
+22:33:11.892985 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:33:11.893468 version@stat F·[2] S·107KiB[107KiB] Sc·[0.50]
+22:33:11.893505 db@open opening
+22:33:11.893682 journal@recovery F·1
+22:33:11.894525 journal@recovery recovering @8
+22:33:11.939473 memdb@flush created L0@10 N·24 S·2KiB ",v830":"blo..ore,v811"
+22:33:11.943812 version@stat F·[3] S·110KiB[110KiB] Sc·[0.75]
+22:33:12.064115 db@janitor F·5 G·0
+22:33:12.064202 db@open done T·170.671699ms
+22:33:52.249576 db@close closing
+22:33:52.249678 db@close done T·100.049µs
