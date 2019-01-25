@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 public class ExecuteTransaction
 {
     /* Nodes */
-    public static final String validator = "4474D57D0F6C70FEBDA3D0B0D602A64F68134A0F";
-    public static final String participant = "AAE79FCC1051D8921723D66272CA49B42B044C83";
+    public static String validator = "4474D57D0F6C70FEBDA3D0B0D602A64F68134A0F";
+    public static String participant = "AAE79FCC1051D8921723D66272CA49B42B044C83";
     
     /* Commands */
     public static String CmdStartNode = " start --validator-index=0";
@@ -15,16 +15,17 @@ public class ExecuteTransaction
     /** Usage java ExecuteTransaction path/to/burrow_executable */
     public static void main(String[] args)
     {
-        if(args.length != 1)
+        if(args.length != 3)
         {
-            System.out.println("Missing parameters. java ExecuteTransaction path/to/burrow_executable");
+            System.out.println("Missing parameters. java ExecuteTransaction path/to/burrow_executable validator_ID no_of_iterations");
             System.exit(0);
         }
         CmdTransaction = args[0] + CmdTransaction;
+        validator = args[1];
+        int n = Integer.parseInt(args[2]);
         
-        int n = 1000;
         long t0 = System.currentTimeMillis();
-        //System.out.println(CmdTransaction);
+        System.out.println("Starting at time: " + t0);
         try
         {
             for(int i = 0; i < n; i++)
