@@ -65,36 +65,56 @@ public class FindTimestamps
             }
 
             int count = 0;
-            for (String object : hashList) {
-              System.out.println("For Hash '" + object + "' the execution time was:");
+            for (String object : hashList)
+            {
+                System.out.println("For Hash '" + object + "' the execution time was:");
 
-              String startDateString = startTransactionTimeList.get(count).substring(0,10) + ' ' + startTransactionTimeList.get(count).substring(11,29);
-              //System.out.println(startDateString);
-              Date startDate = format.parse(startDateString);
+                int idxEnd1 = startTransactionTimeList.get(count).indexOf("T");
+                int idxEnd2 = startTransactionTimeList.get(count).indexOf("Z");
+                String startDateString = getTimeFromString(startTransactionTimeList.get(count), startTransactionTimeList.get(count));
+                //System.out.println(startDateString);
+                Date startDate = format.parse(startDateString);
 
-              String endDateString = endTransactionTimeList.get(count).substring(0,10) + ' ' + endTransactionTimeList.get(count).substring(11,29);
-              //System.out.println(endDateString);
-              Date endDate = format.parse(endDateString);
+                idxEnd1 = endTransactionTimeList.get(count).indexOf("T");
+                idxEnd2 = endTransactionTimeList.get(count).indexOf("Z");
+                String endDateString = getTimeFromString(endTransactionTimeList.get(count), endTransactionTimeList.get(count));
+                //String endDateString = endTransactionTimeList.get(count).substring(0,idxEnd1) + ' ' + endTransactionTimeList.get(count).substring(idxEnd1+1,idxEnd2);
+                
+                //System.out.println(endDateString);
+                Date endDate = format.parse(endDateString);
+                executionTimeListInSec.add(endDate.getTime() - startDate.getTime());
+                
+                //get the ms
+                String timeToCalc = executionTimeListInSec.get(count).toString();
+                for(int i = timeToCalc.length(); i < 9; i++)
+                {
+                    timeToCalc = "0" + timeToCalc;
+                }
+                timeToCalc = "0." + timeToCalc;
 
-              executionTimeListInSec.add(endDate.getTime() - startDate.getTime());
+                executionTimeListInMs.add(Double.valueOf(timeToCalc) * 1000);
+                System.out.println(executionTimeListInMs.get(count) + "ms");
 
-              //get the ms
-              String timeToCalc = executionTimeListInSec.get(count).toString();
-              for(int i = timeToCalc.length(); i < 9; i++) {
-                timeToCalc = "0" + timeToCalc;
-              }
-              timeToCalc = "0." + timeToCalc;
-
-              executionTimeListInMs.add(Double.valueOf(timeToCalc) * 1000);
-              System.out.println(executionTimeListInMs.get(count) + "ms");
-
-
-              count++;
+                count++;
             }
         }
         catch(Exception ex)
         {
-
+            ex.printStackTrace();
         }
+    }
+    
+    public static String getTimeFromString(String start, String end)
+    {
+        int idxEnd1 = start.indexOf("T");
+        int idxEnd2 = end.indexOf("Z");
+        String first = start.substring(0,idxEnd1);
+        String second = end.substring(idxEnd1+1,idxEnd2);
+        for(int i = second.length(); i < 18; i++)
+        {
+            second += "0";
+        }
+        second += "Z";
+        return first + ' ' + second;
     }
 }
