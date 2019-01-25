@@ -33,7 +33,10 @@ public class FindTimestamps
             ArrayList<String> startTransactionTimeList = new ArrayList<String>();
             ArrayList<String> endTransactionTimeList = new ArrayList<String>();
             ArrayList<String> hashList = new ArrayList<String>();
-            ArrayList<Long> executionTimeList = new ArrayList<Long>();
+            //Stores the time in secounds, but its the digits after the point with length of nine
+            ArrayList<Long> executionTimeListInSec = new ArrayList<Long>();
+            //Stores the time in milisecounds
+            ArrayList<Double> executionTimeListInMs = new ArrayList<Double>();
             int idx = 0;
             while(true)
             {
@@ -66,13 +69,25 @@ public class FindTimestamps
               System.out.println("For Hash '" + object + "' the execution time was:");
 
               String startDateString = startTransactionTimeList.get(count).substring(0,10) + ' ' + startTransactionTimeList.get(count).substring(11,29);
+              //System.out.println(startDateString);
               Date startDate = format.parse(startDateString);
 
               String endDateString = endTransactionTimeList.get(count).substring(0,10) + ' ' + endTransactionTimeList.get(count).substring(11,29);
+              //System.out.println(endDateString);
               Date endDate = format.parse(endDateString);
 
-              executionTimeList.add(endDate.getTime() - startDate.getTime());
-              System.out.println(executionTimeList.get(count) + "ms");
+              executionTimeListInSec.add(endDate.getTime() - startDate.getTime());
+
+              //get the ms
+              String timeToCalc = executionTimeListInSec.get(count).toString();
+              for(int i = timeToCalc.length(); i < 9; i++) {
+                timeToCalc = "0" + timeToCalc;
+              }
+              timeToCalc = "0." + timeToCalc;
+
+              executionTimeListInMs.add(Double.valueOf(timeToCalc) * 1000);
+              System.out.println(executionTimeListInMs.get(count) + "ms");
+
 
               count++;
             }
