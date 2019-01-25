@@ -21,10 +21,13 @@ public class ExecuteTransaction
             System.exit(0);
         }
         CmdTransaction = args[0] + CmdTransaction;
+        
+        int n = 1000;
+        long t0 = System.currentTimeMillis();
         //System.out.println(CmdTransaction);
         try
         {
-            for(int i = 0; i < 20; i++)
+            for(int i = 0; i < n; i++)
             {
                 String s = "";
                 Process p = Runtime.getRuntime().exec(CmdTransaction);
@@ -32,7 +35,6 @@ public class ExecuteTransaction
                 BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
                 
                 long time = System.currentTimeMillis();
-                System.out.println(p);
                 
                 while ((s = stdError.readLine()) != null)
                 {
