@@ -1,0 +1,4 @@
+INFO [01-25|13:13:23.003] Commit new mining work                   number=18 sealhash=b6813a…d90a6a uncles=0 txs=10 gas=210000 fees=2.1e-13 elapsed=2.047ms
+INFO [01-25|13:13:25.001] Successfully sealed new block            number=18 sealhash=b6813a…d90a6a hash=059ba8…ce75ec elapsed=1.999s
+INFO [01-25|13:13:25.001] 🔗 block reached canonical chain          number=11 hash=4d277e…f4aa5e
+INFO [01-25|13:13:25.001] 🔨 mined potential block                  number=18 hash=059ba8…ce75ec

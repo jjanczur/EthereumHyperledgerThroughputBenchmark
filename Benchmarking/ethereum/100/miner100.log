@@ -1,0 +1,6 @@
+miner100.log
+
+INFO [01-25|13:19:29.006] Commit new mining work                   number=201 sealhash=97ac02…177d9c uncles=0 txs=100 gas=2100000 fees=2.1e-12 elapsed=5.918ms
+INFO [01-25|13:19:31.001] Successfully sealed new block            number=201 sealhash=97ac02…177d9c hash=6d50a5…634a37 elapsed=1.995s
+INFO [01-25|13:19:31.001] 🔗 block reached canonical chain          number=194 hash=95c1fb…9a799f
+INFO [01-25|13:19:31.001] 🔨 mined potential block                  number=201 hash=6d50a5…634a37

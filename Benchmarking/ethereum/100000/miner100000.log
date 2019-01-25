@@ -1,0 +1,4 @@
+miner100000.log
+Start:
+ubuntu@ip-172-31-41-187:~/EthereumHyperledgerThroughputBenchmark/ethereum$ ./console.sh 1
+WARN [01-25|13:38:54.459] Sanitizing cache to Go's GC limits       provided=1024 updated=327

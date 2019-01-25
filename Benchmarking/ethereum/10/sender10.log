@@ -1,0 +1,15 @@
+> crazySend(10)
+INFO [01-25|13:13:22.315] Setting new local account                address=0x42246E58C85037F28177254f352Fee4F2Bd792ff
+INFO [01-25|13:13:22.315] Submitted transaction                    fullhash=0xe14afacc7135ae60bf6a64a7126dd017c03942adf18115b6735682f0ab66bfc7 recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.322] Submitted transaction                    fullhash=0x591cd8fac024271ad369bca2eb175559d6a1d0ee1d61bddfdfcbd40f984d244a recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.329] Submitted transaction                    fullhash=0xbfffc7936b76342a4bbbeb2a86c6905bb2cac1587f8b2d5dfdf32d7fce76133a recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.335] Submitted transaction                    fullhash=0xfd5db66e7945037f830a7220b44efcd0e599655e67ce94618d68fcad7523052b recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.341] Submitted transaction                    fullhash=0xdcb4719ae10ce9a34410263dac7a4de7c6b7a3d5efd4a2fab4982a514167a0a8 recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.347] Submitted transaction                    fullhash=0xdef0f91400f45bac24e4eaf3014c4ebe01306f0cfcf0e3ca21cd4d18037bd96b recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.353] Submitted transaction                    fullhash=0x7cac2921517dbfc3c619989f2a200fe51c7867042ecae3998ceb1a515f10fd27 recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.359] Submitted transaction                    fullhash=0xc42c09263596d15a53cffe1f3676955bdbc9d9a1f7a930aae2c84d75fb52038f recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.365] Submitted transaction                    fullhash=0xccf092e10a0bc2f1a6b689649c7b39a89298cc90795cd8934c68e526a175cc08 recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+INFO [01-25|13:13:22.371] Submitted transaction                    fullhash=0x694e9b22148b5a9dae25d3383aa4fc24c983328168d7fe5c8ad9b74d9f22130b recipient=0x909913a250c7087D426C20B46b913d4dD9B526A8
+undefined
+> INFO [01-25|13:13:23.003] Imported new chain segment               blocks=2 txs=0 mgas=0.000 elapsed=1.002ms   mgasps=0.000 number=17 hash=e0f82d…7b4c3e cache=0.00B
+INFO [01-25|13:13:27.005] Imported new chain segment               blocks=2 txs=10 mgas=0.210 elapsed=5.265ms   mgasps=39.884 number=19 hash=33606b…afc22e cache=627.00B
