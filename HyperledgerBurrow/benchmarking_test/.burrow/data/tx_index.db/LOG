@@ -106,3 +106,38 @@
 11:33:03.892228 db@open done T·186.980437ms
 11:33:13.429867 db@close closing
 11:33:13.429904 db@close done T·31.313µs
+=============== Jan 26, 2019 (CET) ===============
+11:41:08.615744 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:41:08.616236 version@stat F·[1] S·650B[650B] Sc·[0.25]
+11:41:08.616285 db@open opening
+11:41:08.616479 journal@recovery F·1
+11:41:08.616813 journal@recovery recovering @19
+11:41:08.669141 memdb@flush created L0@21 N·2 S·656B "D\x1a\xb4..\xb1G\xa9,v5":"M\xa7\x00..gde,v4"
+11:41:08.671114 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:41:08.804525 db@janitor F·4 G·0
+11:41:08.804627 db@open done T·188.309666ms
+11:41:56.708470 db@close closing
+11:41:56.708581 db@close done T·108.451µs
+=============== Jan 26, 2019 (CET) ===============
+11:45:56.139367 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:45:56.139762 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:45:56.139824 db@open opening
+11:45:56.139957 journal@recovery F·1
+11:45:56.140724 journal@recovery recovering @22
+11:45:56.141044 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:45:56.275206 db@janitor F·4 G·0
+11:45:56.275298 db@open done T·135.453221ms
+11:51:51.551349 db@close closing
+11:51:51.551392 db@close done T·41.717µs
+=============== Jan 26, 2019 (CET) ===============
+11:52:50.996632 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:52:50.997122 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:52:50.997161 db@open opening
+11:52:50.997338 journal@recovery F·1
+11:52:50.998723 journal@recovery recovering @24
+11:52:51.039053 memdb@flush created L0@26 N·11 S·2KiB "?\r\xb2..\\\xeaC,v15":"\xf9\xf9\xfd..\xfe\xd1!,v16"
+11:52:51.044103 version@stat F·[3] S·3KiB[3KiB] Sc·[0.75]
+11:52:51.164296 db@janitor F·5 G·0
+11:52:51.164360 db@open done T·167.176675ms
+11:54:01.025309 db@close closing
+11:54:01.025476 db@close done T·159.375µs

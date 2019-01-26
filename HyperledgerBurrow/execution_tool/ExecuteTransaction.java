@@ -20,8 +20,9 @@ public class ExecuteTransaction
             System.out.println("Missing parameters. java ExecuteTransaction path/to/burrow_executable validator_ID no_of_iterations");
             System.exit(0);
         }
-        CmdTransaction = args[0] + CmdTransaction;
         validator = args[1];
+        CmdTransaction = args[0] + " deploy --address " + validator + " -f test.yaml";;
+        System.out.println(CmdTransaction);
         int n = Integer.parseInt(args[2]);
         
         long t0 = System.currentTimeMillis();
