@@ -1,5 +1,5 @@
 jobs:
 - name: sendTxTest1
   send:
-      destination: AAE79FCC1051D8921723D66272CA49B42B044C83
+      destination: D77A1CBABECA533D2D1E019B849EF851DBD8C4C3
       amount: 42

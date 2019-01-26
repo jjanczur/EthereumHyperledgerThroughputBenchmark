@@ -1,0 +1,3 @@
+Sourcing config from first of: Config file at 'burrow.toml' then defaults
+Sourcing config from Config file at 'burrow.toml'
+could not update burrow config: unable to set ValidatorAddress from provided validator-index since no GenesisDoc/GenesisSpec provided
