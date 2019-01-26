@@ -176,3 +176,27 @@
 11:52:50.916020 table@remove removed @27
 11:54:01.024644 db@close closing
 11:54:01.024787 db@close done T·137.72µs
+=============== Jan 26, 2019 (CET) ===============
+12:17:12.967339 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:17:12.967956 version@stat F·[0 1] S·13KiB[0B 13KiB] Sc·[0.00 0.00]
+12:17:12.967997 db@open opening
+12:17:12.968144 journal@recovery F·1
+12:17:12.968420 journal@recovery recovering @38
+12:17:13.044464 memdb@flush created L0@41 N·228 S·12KiB "abc..530,v2142":"val..588,v2367"
+12:17:13.046605 version@stat F·[1 1] S·25KiB[12KiB 13KiB] Sc·[0.25 0.00]
+12:17:13.258028 db@janitor F·4 G·0
+12:17:13.258102 db@open done T·290.081504ms
+12:17:40.618430 db@close closing
+12:17:40.618530 db@close done T·98.737µs
+=============== Jan 26, 2019 (CET) ===============
+12:27:40.624019 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:27:40.624458 version@stat F·[1 1] S·25KiB[12KiB 13KiB] Sc·[0.25 0.00]
+12:27:40.624496 db@open opening
+12:27:40.624655 journal@recovery F·1
+12:27:40.625027 journal@recovery recovering @42
+12:27:40.679322 memdb@flush created L0@44 N·84 S·4KiB "abc..587,v2371":"val..609,v2452"
+12:27:40.681043 version@stat F·[2 1] S·29KiB[16KiB 13KiB] Sc·[0.50 0.00]
+12:27:40.805009 db@janitor F·5 G·0
+12:27:40.805081 db@open done T·180.562466ms
+12:29:19.014186 db@close closing
+12:29:19.014335 db@close done T·142.55µs

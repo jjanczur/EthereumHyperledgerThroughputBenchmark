@@ -166,3 +166,36 @@
 11:52:50.466557 db@open done T·201.610642ms
 11:54:01.024321 db@close closing
 11:54:01.024600 db@close done T·275.994µs
+=============== Jan 26, 2019 (CET) ===============
+12:17:12.771438 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:17:12.771690 version@stat F·[3 1] S·427KiB[273KiB 153KiB] Sc·[0.75 0.00]
+12:17:12.771715 db@open opening
+12:17:12.771833 journal@recovery F·1
+12:17:12.772676 journal@recovery recovering @37
+12:17:12.830540 memdb@flush created L0@39 N·342 S·50KiB ",v3527":"blo..ore,v3190"
+12:17:12.836059 version@stat F·[4 1] S·477KiB[324KiB 153KiB] Sc·[1.00 0.00]
+12:17:12.966239 db@janitor F·7 G·0
+12:17:12.966338 db@open done T·194.603485ms
+12:17:12.966514 table@compaction L0·4 -> L1·1 S·477KiB Q·3528
+12:17:13.089055 table@build created L1@42 N·2346 S·479KiB ",v3527":"blo..ore,v3526"
+12:17:13.089275 version@stat F·[0 1] S·479KiB[0B 479KiB] Sc·[0.00 0.00]
+12:17:13.234791 table@compaction committed F-4 S+1KiB Ke·0 D·788 T·268.153488ms
+12:17:13.235569 table@remove removed @39
+12:17:13.235687 table@remove removed @36
+12:17:13.235728 table@remove removed @33
+12:17:13.235762 table@remove removed @30
+12:17:13.235816 table@remove removed @29
+12:17:40.618166 db@close closing
+12:17:40.618375 db@close done T·202.8µs
+=============== Jan 26, 2019 (CET) ===============
+12:27:40.429642 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:27:40.429887 version@stat F·[0 1] S·479KiB[0B 479KiB] Sc·[0.00 0.00]
+12:27:40.429908 db@open opening
+12:27:40.430001 journal@recovery F·1
+12:27:40.430840 journal@recovery recovering @40
+12:27:40.487857 memdb@flush created L0@43 N·126 S·18KiB ",v3654":"blo..ore,v3533"
+12:27:40.493524 version@stat F·[1 1] S·497KiB[18KiB 479KiB] Sc·[0.25 0.00]
+12:27:40.623415 db@janitor F·4 G·0
+12:27:40.623502 db@open done T·193.575567ms
+12:29:19.013939 db@close closing
+12:29:19.014128 db@close done T·183.78µs
