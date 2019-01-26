@@ -38,6 +38,7 @@ public class FindTimestamps
             //Stores the time in milisecounds
             ArrayList<Double> executionTimeListInMs = new ArrayList<Double>();
             int idx = 0;
+            System.out.println("Start");
             while(true)
             {
                 idx = s.indexOf(PATTERN_ARRIVAL, idx);
@@ -51,13 +52,13 @@ public class FindTimestamps
                 idx1 = s.indexOf(PATTERN_HASH, idx)+11;
                 idx2 = s.indexOf("\"", idx1);
                 hashList.add(s.substring(idx1, idx2));
-                //System.out.println(s.substring(idx1, idx2));
+                System.out.println(s.substring(idx1, idx2));
 
                 idx = s.indexOf(PATTERN_EXECUTION, idx);
                 idx1 = s.indexOf(PATTERN_TIME, idx)+8;
                 idx2 = s.indexOf("\"", idx1);
                 endTransactionTimeList.add(s.substring(idx1, idx2));
-                //System.out.println(s.substring(idx1, idx2));
+                System.out.println(s.substring(idx1, idx2));
                 indexList.add(idx);
 
                 //System.out.println(idx);
