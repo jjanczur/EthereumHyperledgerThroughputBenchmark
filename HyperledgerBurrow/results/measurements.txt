@@ -1,0 +1,17 @@
+throughput = num_of_trans / ( time_last_block - time_first_transaction_send )
+
+t0 := time_first_transaction_send
+
+https://github.com/jjanczur/EthereumHyperledgerThroughputBenchmark.git
+
+10:
+    t0 = 1548502374390
+
+100:
+    t0 = 1548502396020
+
+1000:
+    t0 = 1548502436539
+
+10000:
+    t0 = 1548502709852
