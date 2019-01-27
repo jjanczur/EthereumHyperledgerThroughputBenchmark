@@ -5,13 +5,50 @@ t0 := time_first_transaction_send
 https://github.com/jjanczur/EthereumHyperledgerThroughputBenchmark.git
 
 10:
-    t0 = 1548502374390
+    pool size = 150
+    t0 = 1548570318166
+    time java ExecuteTransaction ../benchmarking_test/burrow $burrow_validator 10 ec2-34-205-19-198.compute-1.amazo
+    naws.com 10997 150 &> 10.out
 
+    real    0m1.141s
+    user    0m1.016s
+    sys     0m0.106s
+ 
 100:
-    t0 = 1548502396020
+    pool size = 150
+    t0 = 1548570436193
+    time java ExecuteTransaction ../benchmarking_test/burrow $burrow_validator 100 ec2-34-205-19-198.compute-1.amaz
+    onaws.com 10997 150 &> 100.out
+
+    real    0m3.170s
+    user    0m2.311s
+    sys     0m0.677s
 
 1000:
-    t0 = 1548502436539
+    pool size = 150
+    t0 = 1548571000380
+    time java ExecuteTransaction ../benchmarking_test/burrow $burrow_validator 1000 ec2-34-205-19-198.compute-1.amazonaws.com 10997 150 &> 1000.out
+
+    real    0m24.592s
+    user    0m15.384s
+    sys     0m8.381s
 
 10000:
-    t0 = 1548502709852
+    pool size = 100
+    t0 = 1548581350472
+    time java ExecuteTransaction ../benchmarking_test/burrow $burrow_vali
+    dator 10000 ec2-54-237-222-128.compute-1.amazonaws.com 10997 100 &> 10000.out
+
+    real    6m17.293s
+    user    5m1.518s
+    sys     1m10.780s
+
+21743:
+    pool size = 50
+    t0 = 1548582419596
+    time java ExecuteTransaction ../benchmarking_test/burrow $burrow_vali
+    dator 10000 ec2-54-237-222-128.compute-1.amazonaws.com 10997 100 &> 10000.out
+
+    around    60min
+    Crashed because Hyperledger/burrow got out of memory! (queue too full)?
+    I reduced the thread pool to send fewer transaction, but couldn't turn it too low, because it would take too much time.

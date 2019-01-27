@@ -46,19 +46,25 @@ public class FindTimestamps
                     break;
                 int idx1 = s.indexOf(PATTERN_TIME, idx)+8;
                 int idx2 = s.indexOf("\"", idx1);
+                if(idx1 == -1 || idx2 == -1)
+                    break;
                 startTransactionTimeList.add(s.substring(idx1, idx2));
                 //System.out.println(s.substring(idx1, idx2));
 
                 idx1 = s.indexOf(PATTERN_HASH, idx)+11;
                 idx2 = s.indexOf("\"", idx1);
+                if(idx1 == -1 || idx2 == -1)
+                    break;
                 hashList.add(s.substring(idx1, idx2));
-                System.out.println(s.substring(idx1, idx2));
+                //System.out.println(s.substring(idx1, idx2));
 
                 idx = s.indexOf(PATTERN_EXECUTION, idx);
                 idx1 = s.indexOf(PATTERN_TIME, idx)+8;
                 idx2 = s.indexOf("\"", idx1);
+                if(idx == -1 || idx1 == -1 || idx2 == -1)
+                    break;
                 endTransactionTimeList.add(s.substring(idx1, idx2));
-                System.out.println(s.substring(idx1, idx2));
+                //System.out.println(s.substring(idx1, idx2));
                 indexList.add(idx);
 
                 //System.out.println(idx);
@@ -66,9 +72,10 @@ public class FindTimestamps
             }
 
             int count = 0;
+            System.out.println(hashList.size() + " transactions found");
             for (String object : hashList)
             {
-                System.out.println("For Hash '" + object + "' the execution time was:");
+                //System.out.println("For Hash '" + object + "' the execution time was:");
 
                 int idxEnd1 = startTransactionTimeList.get(count).indexOf("T");
                 int idxEnd2 = startTransactionTimeList.get(count).indexOf("Z");
@@ -94,7 +101,8 @@ public class FindTimestamps
                 timeToCalc = "0." + timeToCalc;
 
                 executionTimeListInMs.add(Double.valueOf(timeToCalc) * 1000);
-                System.out.println(executionTimeListInMs.get(count) + "ms");
+                //System.out.println(executionTimeListInMs.get(count) + "ms");
+                System.out.println(executionTimeListInMs.get(count));
 
                 count++;
             }
