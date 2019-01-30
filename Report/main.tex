@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+
+\makeatletter
+\let\thetitle\@title
+
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+	\centering
+    
+    \includegraphics[scale = 0.75]{Logo.png} \\[1.0 cm]
+    
+    \vspace{4 cm}
+    
+    {\LARGE Experiment report} \\[0.2 cm]
+    
+    \vspace{1 cm}
+    
+    \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+    
+	\textsc{\LARGE Ethereum vs. Hyperledger}\\[0.2 cm]
+	\textsc{\lARGE Comparison of throughput for non-conflicting transactions} \\[0.2 cm]
+	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	
+	{\huge \bfseries \thetitle}\\
+	
+	\vspace{2 cm}
+	
+	\begin{minipage}{0.4\textwidth}
+		
+		\begin{flushleft} 
+			\emph{Authors:} \\
+			Jacek Janczura \linebreak
+			Igor Molcean \linebreak
+			Julian Valentino Weigel \linebreak
+			Kim Janik Jasun Herter
+		\end{flushleft}
+	\end{minipage}\\[2 cm]
+	
+
+ 
+	\vfill
+	
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+In this experiment, we compared Ethereum and Hyperledger private networks with regard to throughput for non-conflicting transactions, i.e. transactions that do not cause double-spending. We proposed two mathematical definitions of throughput and used them to compare both systems. We set up the networks in similar conditions and provided them with synthetically generated workload. We used custom tools to collect relevant data from systems’ logs. Finally, we came to the conclusion that Ethereum, generally, shows more promising results. However, further research will be needed for more profound analysis.
+\end{abstract}
+
+\newpage
+\section{INTRODUCTION}
+
+\section{METHOD}
+
+\section{RESULTS}
+
+\section{FUTURE SCOPE}
+
+\section{CONCLUSION}
+
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{biblist}
+
+\end{document}
