@@ -1,1 +1,5 @@
-{\color{red} Hyperledger}
+For Hyperledger Burrow, the logs were used as well. The arrival and execution timestamps as well as the hash of a 
+received transaction were logged. With an own written parser, these timestamps could be extracted and used for the calculation
+of the throughput. The sending of multiple transactions at once was done by another self-written tool. The communication of the
+Blockchain and the clients was implemented by Burrow via TCP. Because this resulted in a round-trip time of about one second, a thread pool
+was used to increase the number of parallel transactions. 
