@@ -1,0 +1,7 @@
+\subsection{Main concepts}
+
+\textbf{Throughput} is the maximum rate at which transactions can be successfully processed by the blockchain, i.e. end up in a block of the canonical chain. Not to be confused with \textbf{Bandwidth}, which is the maximum possible rate at which transactions can be processed theoretically. Both are measured in transactions per second (Tx/s).
+
+\textbf{Proof-of-Authority} is an algorithm where only authorized nodes, called sealers or signers, can add blocks to chain. To make sure a malicious node can’t do harm to the network, any signer can sign at most one of a number $\lfloor S/2 \rfloor + 1$ of consecutive blocks (where $S$ is the number of sealers). PoA algorithm used in Ethereum is called Clique \cite{clique}.
+
+\textbf{Proof-of-Stake} is a consensus algorithm where decisions are made based on weighted random choice. It is calculated by participation duration in combination with the size of the stake. It’s byzantine fault tolerant \cite{pos}.

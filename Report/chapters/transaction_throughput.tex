@@ -1,0 +1,22 @@
+\subsection{Transaction throughput} \label{throughput}
+In out experiment, we defined throughput as average number of transactions in a block divided by the block frequency:
+
+$$Throughput = \frac{1/N \sum_{b=1}^{N} T_b}{F}$$
+
+where
+\begin{itemize}
+    \item $N$ is total number of transactions submitted
+    \item $T_b$ is number of transactions contained in block $b$
+    \item $F$ is block frequency
+\end{itemize}
+
+Other definitions can also be found in literature. We decided to compare one of them with ours. It is formulated as follows: transaction throughput is the rate at which valid transactions are committed by the blockchain System Under Test (further SUT) in a defined time period \cite{hyperledger_paper}. This definition may be presented as the following formula:
+
+$$Throughput_{alt} = \frac{N}{t_{b_N} - t_{T_0}}$$
+
+where
+\begin{itemize}
+    \item $N$ is total number of submitted transactions submitted
+    \item $t_{b_N}$ is the commit time of the last block
+    \item $t_{T_0}$ is the submission time of the initial transaction
+\end{itemize}
