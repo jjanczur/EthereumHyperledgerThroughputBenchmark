@@ -1,5 +1,6 @@
 \subsection{Hyperledger}
 
+\textit{Author: Julian} \\
 In Hyperledger Burrow the throughput was measured using the $Throughput_{alt}$ method mentioned in 2.1.
 In \ref{table:4} the minimum, maximum and average time of a transaction is visualized. For 10 up to 1000 transactions
 the minimum and average time of one transaction is below 1 second. The maximum time for more than 1000 transactions
@@ -19,42 +20,23 @@ drastically increases from 25 seconds to around 1000 seconds for 10000 transacti
 \label{table:4}
 \end{table}
 
-The throughput for the test with 10 transactions as shown is figure \ref{fig:burrowtx10} shows a more or less
-stable curve with only few up and downs and not much variation. The result for 100 (figure \ref{fig:burrowtx100})
-transactions has a similar outcome. Starting the benchmark with 1000 (figure \ref{fig:burrowtx1000}) or even 10000
-(figure \ref{fig:burrowtx10000}) transactions, the variance of some of these measurements is extremly high. In
-the last test, the effect even intensifies with increased time passed.
+The throughput for the test with 10 transactions as displayed in figure \ref{fig:burrowtxs} upper left graph shows a more or less
+stable curve with only few ups and downs and not much variation. The result for 100 (figure \ref{fig:burrowtxs} upper right)
+transactions has a similar outcome. Starting the benchmark with 1000 (figure \ref{fig:burrowtxs} lower left) or even 10000
+(figure \ref{fig:burrowtxs} lower right) transactions, the variance of some of these measurements is extremly high. In
+the last test, the effect even intensifies with increased time passed. \\[1cm]
 
 \begin{minipage}{\linewidth}
     \makebox[\linewidth]{
-    \includegraphics[width=0.75\textwidth]{img/10Tx.png}}
-   \captionof{figure}{Burrow: 10 transactions and their execution time}\label{fig:burrowtx10}
+    \includegraphics[width=1.00\textwidth]{img/HyperAllInOne.png}}
+   \captionof{figure}{Burrow: 10 transactions and their execution time}\label{fig:burrowtxs}
 \end{minipage}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.75\textwidth]{img/100Tx.png}
-   \caption{Burrow: 100 transactions and their execution time}
-   \label{fig:burrowtx100}
-\end{figure}
+%%%Maybe switch the following part to conclusion
+The increase in the time needed to execute one transaction with a higher total number of transactions sent is part of the
+limitations of the used EC2 instance. The thread pool used to send multiple transactions at once were to many for the engine
+to handle and in the end the node ran out of memory to use. This effect could be weakened by decreasing the thread pool size
+but would also result in a higher total execution time. A test was done with 1000 transaction and a pool size of 10 and 150.
+Where the total execution time of the first one was around 20 minutes, the second one was below 4 minutes.
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.75\textwidth]{img/1000Tx.png}
-   \caption{Burrow: 1000 transactions and their execution time}
-   \label{fig:burrowtx1000}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.75\textwidth]{img/10000Tx.png}
-   \caption{Burrow: 10000 transactions and their execution time}
-   \label{fig:burrowtx10000}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.75\textwidth]{img/Hyperledger.png}
-   \caption{Burrow: Throughput}
-   \label{fig:burrowthroughput}
-\end{figure}

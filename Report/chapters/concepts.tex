@@ -4,4 +4,8 @@
 
 \textbf{Proof-of-Authority} is an algorithm where only authorized nodes, called sealers or signers, can add blocks to chain. To make sure a malicious node can’t do harm to the network, any signer can sign at most one of a number $\lfloor S/2 \rfloor + 1$ of consecutive blocks (where $S$ is the number of sealers). PoA algorithm used in Ethereum is called Clique \cite{clique}.
 
-\textbf{Proof-of-Stake} is a consensus algorithm where decisions are made based on weighted random choice. It is calculated by participation duration in combination with the size of the stake. It’s byzantine fault tolerant \cite{pos}.
+\textbf{Proof-of-Stake}
+\textit{Author: Julian} \\
+is a consensus algorithm where decisions whether to accept a transaction or not are made based on weighted random choice. It is calculated by participation
+duration in combination with the size of the stake. The proof of stake algorithm is fully byzantine fault tolerant \cite{pos}. A high transaction throughput is
+reached via the used Tendermint consensus engine \cite{burrow_git}.

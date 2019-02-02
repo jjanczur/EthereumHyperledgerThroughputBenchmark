@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.11.22)  1 FEB 2019 19:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.11.22)  2 FEB 2019 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,18 +260,18 @@ Try typing  <return>  to proceed.
 (./main.aux (./chapters/title.aux) (./chapters/abstract.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -402,7 +402,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 
+l.40 
      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -410,7 +410,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.41 
+l.40 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -434,7 +434,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 \include{chapters/abstract}
+l.41 \include{chapters/abstract}
                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -442,7 +442,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.42 \include{chapters/abstract}
+l.41 \include{chapters/abstract}
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -452,28 +452,7 @@ and I'll forget about whatever was undefined.
 
 [2
 
-] (./chapters/introduction.tex
-
-Package natbib Warning: Citation `bitcoin' on page 3 undefined on input line 4.
-
-
-
-Package natbib Warning: Citation `bitcoin_scaling' on page 3 undefined on input
- line 6.
-
-) (./chapters/concepts.tex
-
-Package natbib Warning: Citation `clique' on page 3 undefined on input line 5.
-
-
-Package natbib Warning: Citation `pos' on page 3 undefined on input line 7.
-
-)
-Overfull \hbox (3.82738pt too wide) in paragraph at lines 7--49
-[]\OT1/cmr/bx/n/12 Proof-of-Stake \OT1/cmr/m/n/12 is a con-sen-sus al-go-rithm 
-where de-ci-sions are made based on weighted
- []
-
+] (./chapters/introduction.tex) (./chapters/concepts.tex)
 
 ! LaTeX Error: No \title given.
 
@@ -481,7 +460,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 
+l.48 
      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -489,7 +468,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.49 
+l.48 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -509,10 +488,29 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
 
 
-Package natbib Warning: Citation `hyperledger_paper' on page 4 undefined on inp
-ut line 13.
+! LaTeX Error: No \title given.
 
-) (./chapters/setup_etherium.tex
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21     \item $
+                t_{T_0}$ is the submission time of the initial transaction
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\f@ncyorh ->\theauthor 
+                       \strut 
+l.21     \item $
+                t_{T_0}$ is the submission time of the initial transaction
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]) (./chapters/setup_etherium.tex) (./chapters/setup_hyperledger.tex
 
 ! LaTeX Error: No \title given.
 
@@ -520,72 +518,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 
-    
+l.7 \begin{lstlisting}[frame=single]
+                                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.4 
-    
+l.7 \begin{lstlisting}[frame=single]
+                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[4]
-
-Package natbib Warning: Citation `ec2_params' on page 5 undefined on input line
- 14.
-
-
-Package natbib Warning: Citation `ec2_params' on page 5 undefined on input line
- 14.
-
-
-Package natbib Warning: Citation `geth' on page 5 undefined on input line 18.
-
-
-Package natbib Warning: Citation `bootnode' on page 5 undefined on input line 1
-8.
-
-) (./chapters/setup_hyperledger.tex
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 7.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+[5]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 8.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 7.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 8.
 )
-(./chapters/data_collection_etherium.tex
-
-! LaTeX Error: No \title given.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \subsection
-               {Methods of data collection}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\f@ncyorh ->\theauthor 
-                       \strut 
-l.1 \subsection
-               {Methods of data collection}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[5]) (./chapters/data_collection_hyperledger.tex) (./chapters/results.tex)
+(./chapters/data_collection_etherium.tex)
+(./chapters/data_collection_hyperledger.tex) (./chapters/results.tex)
 (./chapters/eth_block_2s.tex
 
 ! LaTeX Error: No \title given.
@@ -594,16 +552,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 \end{table}
-                
+l.1 \subsection
+               {ETH measurements with block mining period 2s.}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.20 \end{table}
-                
+l.1 \subsection
+               {ETH measurements with block mining period 2s.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -617,6 +575,9 @@ File: img/Throughput_ETH.png Graphic file (type png)
 Package pdftex.def Info: img/Throughput_ETH.png used on input line 31.
 (pdftex.def)             Requested size: 320.57364pt x 195.6113pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <img/Throughputalt.png, id=43, 601.24625pt x 370.38374pt>
 File: img/Throughputalt.png Graphic file (type png)
 
@@ -627,37 +588,16 @@ Package pdftex.def Info: img/Throughputalt.png used on input line 39.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-! LaTeX Error: No \title given.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 
-     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\f@ncyorh ->\theauthor 
-                       \strut 
-l.45 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[7 <./img/Throughput_ETH.png>]
-<img/txmed.png, id=49, 599.23875pt x 366.36874pt>
+<img/txmed.png, id=44, 599.23875pt x 366.36874pt>
 File: img/txmed.png Graphic file (type png)
  <use img/txmed.png>
 Package pdftex.def Info: img/txmed.png used on input line 49.
 (pdftex.def)             Requested size: 320.57364pt x 195.99695pt.
 
-<img/TxNumperBlockSmall.png, id=50, 595.22375pt x 364.36125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/TxNumperBlockSmall.png, id=45, 595.22375pt x 364.36125pt>
 File: img/TxNumperBlockSmall.png Graphic file (type png)
 
 <use img/TxNumperBlockSmall.png>
@@ -665,29 +605,9 @@ Package pdftex.def Info: img/TxNumperBlockSmall.png used on input line 59.
 (pdftex.def)             Requested size: 320.57364pt x 196.23508pt.
 
 
-! LaTeX Error: No \title given.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \end{figure}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\f@ncyorh ->\theauthor 
-                       \strut 
-l.62 \end{figure}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[8 <./img/Throughputalt.png> <./img/txmed.png>])
+)
 
 ! LaTeX Error: There's no line here to end.
 
@@ -695,7 +615,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 \input{chapters/eth_block_2s} \\[1cm]
+l.59 \input{chapters/eth_block_2s} \\[1cm]
                                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -709,7 +629,68 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 
+l.4 
+    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\f@ncyorh ->\theauthor 
+                       \strut 
+l.4 
+    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[7]
+
+! LaTeX Error: No \title given.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 
+    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\f@ncyorh ->\theauthor 
+                       \strut 
+l.4 
+    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[8 <./img/Throughput_ETH.png> <./img/Throughputalt.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/Throughput0s.png, id=55, 592.2125pt x 356.33125pt>
+File: img/Throughput0s.png Graphic file (type png)
+
+<use img/Throughput0s.png>
+Package pdftex.def Info: img/Throughput0s.png used on input line 26.
+(pdftex.def)             Requested size: 320.57364pt x 192.89447pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: No \title given.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 
      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -717,7 +698,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.22 
+l.32 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -725,14 +706,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[9 <./img/TxNumperBlockSmall.png>]
-<img/Throughput0s.png, id=60, 592.2125pt x 356.33125pt>
-File: img/Throughput0s.png Graphic file (type png)
-
-<use img/Throughput0s.png>
-Package pdftex.def Info: img/Throughput0s.png used on input line 26.
-(pdftex.def)             Requested size: 320.57364pt x 192.89447pt.
-
+[9 <./img/txmed.png> <./img/TxNumperBlockSmall.png>]
 <img/blockCap0s.png, id=61, 628.3475pt x 410.53375pt>
 File: img/blockCap0s.png Graphic file (type png)
  <use img/blockCap0s.png>
@@ -750,20 +724,52 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \input{chapters/eth_block_0s} \\[1cm]
+l.60 \input{chapters/eth_block_0s} \\[1cm]
                                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 (./chapters/hyperledger_results.tex
-Overfull \hbox (6.85123pt too wide) in paragraph at lines 3--7
+Overfull \hbox (6.85123pt too wide) in paragraph at lines 3--8
 \OT1/cmr/m/n/12 In Hy-per-ledger Bur-row the through-put was mea-sured us-ing t
 he $\OML/cmm/m/it/12 Throughput[]$ \OT1/cmr/m/n/12 method
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+! LaTeX Error: No \title given.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 
+    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\f@ncyorh ->\theauthor 
+                       \strut 
+l.8 
+    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[10 <./img/Throughput0s.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+
+ []
+
+<img/HyperAllInOne.png, id=66, 840.13875pt x 425.59pt>
+File: img/HyperAllInOne.png Graphic file (type png)
+
+<use img/HyperAllInOne.png>
+Package pdftex.def Info: img/HyperAllInOne.png used on input line 31.
+(pdftex.def)             Requested size: 427.43153pt x 216.522pt.
 
 
 ! LaTeX Error: No \title given.
@@ -772,67 +778,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \begin{minipage}{\linewidth}
-                                 
+l.36 T
+      he increase in the time needed to execute one transaction with a highe...
+
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.28 \begin{minipage}{\linewidth}
-                                 
+l.36 T
+      he increase in the time needed to execute one transaction with a highe...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[10 <./img/Throughput0s.png>] <img/10Tx.png, id=66, 422.57875pt x 212.795pt>
-File: img/10Tx.png Graphic file (type png)
-
-<use img/10Tx.png>
-Package pdftex.def Info: img/10Tx.png used on input line 30.
-(pdftex.def)             Requested size: 320.57364pt x 161.43364pt.
- <img/100Tx.png, id=67, 418.56375pt x 213.79875pt>
-File: img/100Tx.png Graphic file (type png)
-
-<use img/100Tx.png>
-Package pdftex.def Info: img/100Tx.png used on input line 36.
-(pdftex.def)             Requested size: 320.57364pt x 163.7447pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/1000Tx.png, id=68, 418.56375pt x 212.795pt>
-File: img/1000Tx.png Graphic file (type png)
- <use img/1000Tx.png>
-Package pdftex.def Info: img/1000Tx.png used on input line 43.
-(pdftex.def)             Requested size: 320.57364pt x 162.97595pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/10000Tx.png, id=69, 419.5675pt x 212.795pt>
-File: img/10000Tx.png Graphic file (type png)
- <use img/10000Tx.png>
-Package pdftex.def Info: img/10000Tx.png used on input line 50.
-(pdftex.def)             Requested size: 320.57364pt x 162.58632pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/Hyperledger.png, id=70, 520.19344pt x 291.33844pt>
-File: img/Hyperledger.png Graphic file (type png)
-
-<use img/Hyperledger.png>
-Package pdftex.def Info: img/Hyperledger.png used on input line 57.
-(pdftex.def)             Requested size: 320.57364pt x 179.53882pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
+[11 <./img/blockCap0s.png>])
 
 ! LaTeX Error: No \title given.
 
@@ -840,7 +803,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 \newpage
+l.63 \newpage
              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -848,7 +811,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.64 \newpage
+l.63 \newpage
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -856,7 +819,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[11 <./img/blockCap0s.png> <./img/10Tx.png>] (./chapters/future_scope.tex)
+[12 <./img/HyperAllInOne.png>] (./chapters/future_scope.tex)
 (./chapters/conclusion.tex)
 
 ! LaTeX Error: No \title given.
@@ -865,7 +828,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 \newpage
+l.67 \newpage
              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -873,7 +836,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.68 \newpage
+l.67 \newpage
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -881,11 +844,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[12 <./img/100Tx.png> <./img/1000Tx.png>]
-No file main.bbl.
+[13] (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+[]\OT1/cmr/m/n/12 3 things ethereum users should know about hy-per-ledger
+ []
 
-Package natbib Warning: There were undefined citations.
 
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+\OT1/cmr/m/n/12 bur-row.  $\OT1/cmtt/m/n/12 https : / / www . hyperledger . org
+ / blog / 2018 / 07 / 25 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+\OT1/cmtt/m/n/12 3-[]things-[]ethereum-[]users-[]should-[]know-[]about-[]hyperl
+edger-[]burrow$\OT1/cmr/m/n/12 ,
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+))
 
 ! LaTeX Error: No \title given.
 
@@ -893,7 +871,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \end{document}
+l.71 \end{document}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -901,7 +879,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \f@ncyorh ->\theauthor 
                        \strut 
-l.72 \end{document}
+l.71 \end{document}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -909,38 +887,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[13 <./img/10000Tx.png> <./img/Hyperledger.png>] (./main.aux
-(./chapters/title.aux) (./chapters/abstract.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[14] (./main.aux (./chapters/title.aux) (./chapters/abstract.aux)) ) 
 Here is how much of TeX's memory you used:
- 6931 strings out of 494901
- 97196 string characters out of 6178616
- 178847 words of memory out of 5000000
- 10067 multiletter control sequences out of 15000+600000
- 11389 words of font info for 40 fonts, out of 8000000 for 9000
+ 7425 strings out of 494901
+ 102307 string characters out of 6178616
+ 179944 words of memory out of 5000000
+ 10559 multiletter control sequences out of 15000+600000
+ 11558 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,12n,43p,829b,1247s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (14 pages, 665009 bytes).
+ 38i,12n,43p,823b,1247s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (15 pages, 651059 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 134 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

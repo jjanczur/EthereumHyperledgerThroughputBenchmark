@@ -6,8 +6,8 @@
 \contentsline {subsection}{\numberline {2.2}Experimental set up}{5}
 \contentsline {subsection}{\numberline {2.3}Methods of data collection}{6}
 \contentsline {section}{\numberline {3}Results}{6}
-\contentsline {subsection}{\numberline {3.1}ETH measurements with block mining period 2s.}{6}
-\contentsline {subsection}{\numberline {3.2}ETH measurements with block mining period 0s.}{9}
+\contentsline {subsection}{\numberline {3.1}ETH measurements with block mining period 2s.}{7}
+\contentsline {subsection}{\numberline {3.2}ETH measurements with block mining period 0s.}{8}
 \contentsline {subsection}{\numberline {3.3}Hyperledger}{10}
-\contentsline {section}{\numberline {4}Future scope}{12}
-\contentsline {section}{\numberline {5}Conclusion}{12}
+\contentsline {section}{\numberline {4}Future scope}{13}
+\contentsline {section}{\numberline {5}Conclusion}{13}

@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: chapters/title.aux
+A level-1 auxiliary file: chapters/abstract.aux
+The style file: plain.bst
+Database file #1: biblist.bib
+Warning--to sort, need author or key in pos
+Warning--to sort, need author or key in burrow_git
+Warning--to sort, need author or key in hyperledger_paper
+Warning--to sort, need author or key in ec2_params
+Warning--to sort, need author or key in geth
+Warning--to sort, need author or key in bootnode
+You've used 9 entries,
+            2118 wiz_defined-function locations,
+            531 strings with 4962 characters,
+and the built_in function-call counts, 1584 in all, are:
+= -- 146
+> -- 27
+< -- 0
++ -- 15
+- -- 6
+* -- 52
+:= -- 212
+add.period$ -- 19
+call.type$ -- 9
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 63
+empty$ -- 205
+format.name$ -- 6
+if$ -- 375
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 0
+newline$ -- 40
+num.names$ -- 6
+pop$ -- 74
+preamble$ -- 1
+purify$ -- 21
+quote$ -- 0
+skip$ -- 69
+stack$ -- 0
+substring$ -- 45
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 6
+while$ -- 6
+width$ -- 10
+write$ -- 72
+(There were 6 warnings)
