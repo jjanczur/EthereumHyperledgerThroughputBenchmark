@@ -1,12 +1,12 @@
-For Hyperledger we used the Burrow framework. Burrow was selected, because it uses the same EVM as Etherium, 
-therefore the same language for contracts could be used. There are 2 EC2 instances running. One for the Blockchain system
-running with one registered validator and one normal participant. The second instance is used to send the
+For Hyperledger we used the Burrow framework. Burrow was selected, because it uses the same EVM as Etherium.
+Therefore the same language for contracts could be used. There are two EC2 instances running. One for the Blockchain system
+with one registered validator and with one normal participant. The second instance is used to send the
 transactions to the first node. \\
-To create a usable configurate for Burrow to run, the following code was used.
+To create a usable configuration for Burrow to run, the following code was used.
 \begin{lstlisting}[frame=single]
     burrow spec -p1 -f1 | burrow configure -s- > burrow.toml
 \end{lstlisting}
-The key pairs for one validator and one participants were generated.
+The key pairs for one validator and one participant were generated.
 The automatic generated config files listening addresses had to be changed from \textit{127.0.0.1:port} to \textit{0.0.0.0:port}
 for it to work on two different machines. To avaid double spending, the initial funds were set to a high amount and the transaction
-amount during the testing phase switched to one.
+amount during the testing phase changed to one.
