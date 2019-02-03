@@ -1,5 +1,7 @@
 \subsection{ETH measurements with block mining period 2s.}
-Throughput was measured consequently with two previously aforementioned definitions. In the Fig.\ref{fig:throughput1} throughput was measured as average number of transactions in a block divided by the block frequency and in the Fig.\ref{fig:throughput2} throughput was measured using our own formula.
+
+\textit{Author: Jacek Janczura} \\
+Throughput was measured consequently with the two previously aforementioned definitions. In the Fig.\ref{fig:throughput1} throughput was measured as average number of transactions in a block divided by the block frequency and in the Fig.\ref{fig:throughput2} throughput was measured using our own formula.
  
 \begin{table}[!h]
 \centering
@@ -19,11 +21,11 @@ Throughput was measured consequently with two previously aforementioned definiti
 \label{table:2}
 \end{table}
  
-Table \ref{table:2} presents the results of the throughput measurements. In ethereum private blockchain we have observed that in case of lower blockchain load ($tx < 10000$) throughput is in average around 100 transactions per second and the average number of transactions in a block is then on the level around 200 tx/block. Unfortunately in case of higher blockchain load  throughput falls to the level of 50 tx/s and stays on that level even in a really overloaded blockchain.
+Table \ref{table:2} presents the results of the throughput measurements. In ethereum private blockchain we have observed that in case of lower blockchain load ($tx < 10000$) throughput is in average around 100 transactions per second and the average number of transactions in a block is then at the level of around 200 tx/block. Unfortunately in case of higher blockchain load  throughput falls to the level of 50 tx/s and stays on that level even in a really overloaded blockchain.
  
  
  
-The results from measuring the throughput in both ways Fig.\ref{fig:throughput1} and Fig.\ref{fig:throughput2} results in a similar numbers - average filtered throughput between 75-80 tx/s.
+The results from measuring the throughput in both ways Fig.\ref{fig:throughput1} and Fig.\ref{fig:throughput2} results in similar numbers - average filtered throughput between 75-80 tx/s.
  
 \begin{figure}[!h]
     \centering
@@ -41,7 +43,7 @@ The results from measuring the throughput in both ways Fig.\ref{fig:throughput1}
    \label{fig:throughput2}
 \end{figure}
  
-In a Fig. \ref{fig:txbig} we present the number of transactions per block. It is clearly visible that for  higher load average $tx/block$ stays in the level of 100 ts/block. We have as well data for 1 million of transactions. The results are the same as for 100 000 but the chart is less clear that is why we have decided to present this one.
+In Fig. \ref{fig:txbig} we present the number of transactions per block. It is clearly visible that for  higher load average $tx/block$ stays in the level of 100 ts/block. We have data for 1 million transactions as well. The results are the same as for 100 000 but the chart is less clear. That is why we have decided to present this one.
  
 \begin{figure}[!h]
     \centering
@@ -51,7 +53,7 @@ In a Fig. \ref{fig:txbig} we present the number of transactions per block. It is
    \label{fig:txbig}
 \end{figure}
  
-What is interesting we wanted to observe the drop and in a block capacity. This dorp is presented in a Fig. \ref{fig:txsmall}. We think that that might me result of an internal blockchain balancing but we could not proof that. This problem needs further research.
+What is interesting is, that we wanted to observe the drop in the block capacity. This drop is presented in Fig. \ref{fig:txsmall}. We think that this might be the result of an internal blockchain balancing but we could not proof that. That is why this problem needs further research.
  
 \begin{figure}[!h]
     \centering
