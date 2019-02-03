@@ -1,6 +1,6 @@
 \subsection{Experimental set up}
 
-The experimental setup consists of the two private blockchain networks deployed in a controlled distributed environment. As such environment we used several Amazon AWS EC2 instances, their parameters are presented in table \ref{instance_params}. Each node runs on its own Virtual Machine (further VM) but all VMs are located in the same subnetwork to minimize the effect of network latencies to the experiment. For simplicity, both networks were deployed with just one mining node. We conducted the same experiment several times with different values of $N$.
+The experimental setup consists of the two private blockchain networks deployed in a controlled distributed environment. As such environment we used several Amazon AWS EC2 instances, their parameters are presented in Table \ref{instance_params}. Each node runs on its own Virtual Machine (further VM) but all VMs are located in the same subnetwork to minimize the effect of network latencies within the experiment. For simplicity, both networks were deployed with just one mining node. We conducted the same experiment several times with different values of $N$.
 
 \begin{table}[ht]
     \centering
@@ -15,6 +15,6 @@ The experimental setup consists of the two private blockchain networks deployed 
     \label{instance_params}
 \end{table}
 
-In case of Ethereum, we created a private network with the Proof-of-Authority consensus algorithm. There are 2 nodes running on Geth \cite{geth}: Node 1 is sealing blocks and Node 2 is submitting party-to-party transactions to the blockchain. In order to enable nodes’ communication, we used the so-called Bootnode \cite{bootnode}. The block frequency $F$ was set to 2 seconds. In order to guarantee that all transactions are non-conflicting, i.e. do not potentially cause double spending, we preallocated enough Ether on the account used as a transaction sender.
+In case of Ethereum, we created a private network with the Proof-of-Authority consensus algorithm. There are two nodes running on Geth \cite{geth}: Node 1 is sealing blocks and Node 2 is submitting party-to-party transactions to the blockchain. In order to enable nodes’ communication, we used the so-called Bootnode \cite{bootnode}. The block frequency $F$ was set to 2 seconds. In order to guarantee that all transactions are non-conflicting, i.e. they do not potentially cause double spending, we preallocated enough Ether on the account used as a transaction sender.
 
-Additionally we have tested another mining setup. In that second experimental version ETH block period was setup to 0. That means that miner starts to mine a new blocks only When there are a new transactions. If there are no transactions in a blockchain mining frequency drops to 0 and the mining nodes wait for the new transaction to be authorised and added to the blockchain. 
+Additionally, we have tested another mining setup. In that second experimental version, block period was set up to 0. That means that the sealer starts to seal new blocks only if there are new transactions. If there are no transactions in the transaction pool, sealing frequency drops to 0 and the sealer will wait for the new transaction to be authorised and added to the pool. 
