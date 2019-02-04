@@ -332,7 +332,6 @@ experiment.
 ![ETH: Block capacity[]{label="fig:cap"}](Report/img/blockCap0s.png)
 *Figure 6: ETH: Block capacity*
 
-\
 
 Hyperledger
 -----------
@@ -371,6 +370,9 @@ reference="fig:burrowtxs"} lower left) or even 10000 (Fig.
 reference="fig:burrowtxs"} lower right) transactions, the variance of
 some of these measurements is extremly high. In the last test, the
 effect even intensifies with more time passing.\
+
+![ETH: Transactions and their execution
+time[]{label="fig:txsmall"}](Report/img/HyperAllInOne.png)
 
 [\[fig:burrowtxs\]]{#fig:burrowtxs label="fig:burrowtxs"}
 
