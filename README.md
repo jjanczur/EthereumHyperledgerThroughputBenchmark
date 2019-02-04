@@ -373,8 +373,7 @@ effect even intensifies with more time passing.\
 
 ![ETH: Transactions and their execution
 time[]{label="fig:txsmall"}](Report/img/HyperAllInOne.png)
-
-[\[fig:burrowtxs\]]{#fig:burrowtxs label="fig:burrowtxs"}
+*Figure 7: Burrow: Transactions and their execution time*
 
 The increase in the time needed to execute one transaction with a higher
 total number of transactions sent is part of the limitations of the used
@@ -393,8 +392,9 @@ only 10 transactions it would sum up to above 80 transactions per
 second. The test with 10000 transactions resulted in less than 30
 transactions per second.
 
-[\[fig:burrowthroughput\]]{#fig:burrowthroughput
-label="fig:burrowthroughput"}
+![ETH: Transactions and their execution
+time[]{label="fig:txsmall"}](Report/img/Hyperledger.png)
+*Figure 8: Burrow: Throughput*
 
 Conclusion
 ==========
