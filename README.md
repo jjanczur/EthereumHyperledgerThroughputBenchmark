@@ -224,26 +224,22 @@ formula.
 *10000*   | *99.82*            | *100.18*                | *204.08*          | *102.04*
 *100000*  | *1711.73*          | *58.42*                 | *117.1*           | *58.55*
 *489290*  | *8935.53*          | *54.76*                 | *109.53*          | *54.765*
-          | **AVG**            | ***57.77***             | ***123.45***      | ***61.73***
-          | **AVG filtered**   | ***76.77***             | ***157.68***      | ***78.84***
+/         | **AVG**            | ***57.77***             | ***123.45***      | ***61.73***
+/         | **AVG filtered**   | ***76.77***             | ***157.68***      | ***78.84***
 
 
   *Table 2: ETH: Throughput measurement results. Block mined every 2s.*
 
-Table [\[table:2\]](#table:2){reference-type="ref" reference="table:2"}
-presents the results of the throughput measurements. In ethereum private
+Table 2 presents the results of the throughput measurements. In ethereum private
 blockchain we have observed that in case of lower blockchain load
-($tx < 10000$) throughput is in average around 100 transactions per
+(*tx < 10000*) throughput is in average around 100 transactions per
 second and the average number of transactions in a block is then at the
 level of around 200 tx/block. Unfortunately in case of higher blockchain
 load throughput falls to the level of 50 tx/s and stays on that level
 even in a really overloaded blockchain.
 
 The results from measuring the throughput in both ways
-Fig.[1](#fig:throughput1){reference-type="ref"
-reference="fig:throughput1"} and
-Fig.[2](#fig:throughput2){reference-type="ref"
-reference="fig:throughput2"} results in similar numbers - average
+Fig. 1 and Fig. 2 results in similar numbers - average
 filtered throughput between 75-80 tx/s.
 
 *Figure 1: ETH: Throughput as average number of transactions in a block divided by the block frequency*
@@ -251,18 +247,17 @@ filtered throughput between 75-80 tx/s.
 *Figure 2: ETH: Throughput as total number of transactions divided by time from
 submitting the first transaction until mining the last block*
 
-In Fig. [3](#fig:txbig){reference-type="ref" reference="fig:txbig"} we
+In Fig. 3 we
 present the number of transactions per block. It is clearly visible that
-for higher load average $tx/block$ stays in the level of 100 ts/block.
+for higher load average *tx/block* stays in the level of 100 ts/block.
 We have data for 1 million transactions as well. The results are the
 same as for 100 000 but the chart is less clear. That is why we have
 decided to present this one.
 
-*Figure 3:ETH: Block capacity in a higher blockchain load conditions*
+*Figure 3: ETH: Block capacity in a higher blockchain load conditions*
 
 What is interesting is, that we wanted to observe the drop in the block
-capacity. This drop is presented in Fig.
-[4](#fig:txsmall){reference-type="ref" reference="fig:txsmall"}. We
+capacity. This drop is presented in Fig. 4. We
 think that this might be the result of an internal blockchain balancing
 but we could not proof that. That is why this problem needs further
 research.
@@ -283,20 +278,19 @@ be fitting in a block but the miner is not wasting its mining power to
 mine empty blocks. This setup looks more like BASE or ACID database
 where transactions are executed immediately.
 
-**tbn-t0 \[s\]**  | **Thr. \[tx/s\]**
------------------ | -------------------
-*0.08*            | *128.21*
-*0.94*            | *105.93*
-*9.21*            | *108.59*
-*90.84*           | *110.09*
-*924.48*          | *108.17*
-**AVG**           | ***112.20***
+**tx**    | **tbn-t0 \[s\]**  | **Thr. \[tx/s\]**
+--------- | ----------------- | -------------------
+*10*      | *0.08*            | *128.21*
+*100*     | *0.94*            | *105.93*
+*1000*    | *9.21*            | *108.59*
+*10000*   | *90.84*           | *110.09*
+*100000*  | *924.48*          | *108.17*
+/         | **AVG**           | ***112.20***
 
 
   *Table 3: ETH: Throughput measurement results. Mine on demand*
 
-In Table [\[table:3\]](#table:3){reference-type="ref"
-reference="table:3"} we present the results of this new approach. In
+In Table 3 we present the results of this new approach. In
 this case we are measuring throughput as total number of transactions
 divided by time from submitting the first transaction until mining the
 last block. Since the block frequency is not fixed we cannot measure the
@@ -306,13 +300,12 @@ second with an 1,02 average number of transactions per block
 
 *Figure 5: ETH: throughput on a log scale*
 
-In this setup in Fig. [5](#fig:tx0s){reference-type="ref"
-reference="fig:tx0s"} we present the graph where we correlate the
+In this setup in Fig. 5 we present the graph where we correlate the
 throughput with a number of transactions on a log scale. The throughput
 in that scenario is transaction independent and is in average around 100
 tx/s.
 
-Fig. [6](#fig:cap){reference-type="ref" reference="fig:cap"} depicts
+Fig. 6 depicts
 block capacity. This experiment was held on a milion transactions. It's
 clearly visible that in that setup miner submits on average 1
 transaction per block and that value is stable within the whole
@@ -327,7 +320,8 @@ Hyperledger
 
 *Author: Julian*\
 In Hyperledger Burrow the throughput was measured using the
-$Throughput_{alt}$ method mentioned in 2.1. In Table
+<img src="https://latex.codecogs.com/gif.latex?$Throughput_{alt}$" title="$Throughput_{alt}$" />
+method mentioned in 2.1. In Table
 [\[table:4\]](#table:4){reference-type="ref" reference="table:4"} the
 minimum, maximum and average time of a transaction is visualized. For 10
 up to 1000 transactions the minimum and average time of one transaction
@@ -335,12 +329,12 @@ is below 1 second. The maximum time for 1000 transactions is at around
 25 secounds and it increases drastically to around 1000 seconds, if the
 transactions increase to 10000.
 
-**Min \[s\]**  | **Max \[s\]**  | **Avg \[s\]**
--------------- | -------------- | ---------------
-*0.436*        | *0.632*        | *0.530*
-*0.379*        | *0.644*        | *0.475*
-*0.387*        | *25.557*       | *0.572*
-*0.359*        | *999.583*      | *3.457*
+**TX**  | **Min \[s\]**  | **Max \[s\]**  | **Avg \[s\]**
+------- | -------------- | -------------- | ---------------
+*10*    | *0.436*        | *0.632*        | *0.530*
+*100*   | *0.379*        | *0.644*        | *0.475*
+*1000*  | *0.387*        | *25.557*       | *0.572*
+*10000* | *0.359*        | *999.583*      | *3.457*
 
   *Table 4: ETH: Min, Avg and Max execution time of a transaction*
 
