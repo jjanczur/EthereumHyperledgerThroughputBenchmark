@@ -248,13 +248,14 @@ filtered throughput between 75-80 tx/s.
 
 ![ETH: Throughput as average number of transactions in a block divided
 by the block
-frequency[]{label="fig:throughput1"}](Report/img/Throughput_ETH.png){#fig:throughput1
-width="75%"}
+frequency[]{label="fig:throughput1"}](Report/img/Throughput_ETH.png)
+*Figure 1: ETH: Throughput as average number of transactions in a block divided by the block frequency*
 
 ![ETH: Throughput as total number of transactions divided by time from
 submitting the first transaction until mining the last
-block[]{label="fig:throughput2"}](Report/img/Throughputalt.png){#fig:throughput2
-width="75%"}
+block[]{label="fig:throughput2"}](Report/img/Throughputalt.png)
+*Figure 2: ETH: Throughput as total number of transactions divided by time from
+submitting the first transaction until mining the last block*
 
 In Fig. [3](#fig:txbig){reference-type="ref" reference="fig:txbig"} we
 present the number of transactions per block. It is clearly visible that
@@ -264,7 +265,8 @@ same as for 100 000 but the chart is less clear. That is why we have
 decided to present this one.
 
 ![ETH: Block capacity in a higher blockchain load
-conditions[]{label="fig:txbig"}](Report/img/txmed.png){#fig:txbig width="75%"}
+conditions[]{label="fig:txbig"}](Report/img/txmed.png)
+*Figure 3: ETH: Block capacity in a higher blockchain load conditions*
 
 What is interesting is, that we wanted to observe the drop in the block
 capacity. This drop is presented in Fig.
@@ -274,10 +276,9 @@ but we could not proof that. That is why this problem needs further
 research.
 
 ![ETH: Drop in the block
-capacity[]{label="fig:txsmall"}](Report/img/TxNumperBlockSmall.png){#fig:txsmall
-width="75%"}
+capacity[]{label="fig:txsmall"}](Report/img/TxNumperBlockSmall.png)
+*Figure 4: ETH: Drop in the block capacity*
 
-\
 
 ETH measurements with block mining period 0s.
 ---------------------------------------------
@@ -313,7 +314,8 @@ throughput in that setup has raised to in average 112,2 transactions per
 second with an 1,02 average number of transactions per block
 
 ![ETH: throughput on a log
-scale[]{label="fig:tx0s"}](Report/img/Throughput0s.png){#fig:tx0s width="75%"}
+scale[]{label="fig:tx0s"}](Report/img/Throughput0s.png)
+*Figure 5: ETH: throughput on a log scale*
 
 In this setup in Fig. [5](#fig:tx0s){reference-type="ref"
 reference="fig:tx0s"} we present the graph where we correlate the
@@ -327,8 +329,8 @@ clearly visible that in that setup miner submits on average 1
 transaction per block and that value is stable within the whole
 experiment.
 
-![ETH: Block capacity[]{label="fig:cap"}](Report/img/blockCap0s.png){#fig:cap
-width="75%"}
+![ETH: Block capacity[]{label="fig:cap"}](Report/img/blockCap0s.png)
+*Figure 6: ETH: Block capacity*
 
 \
 
@@ -337,7 +339,7 @@ Hyperledger
 
 *Author: Julian*\
 In Hyperledger Burrow the throughput was measured using the
-<img src="https://latex.codecogs.com/gif.latex?$Throughput_{alt}$" title="$Throughput_{alt}$" /> 
+<img src="https://latex.codecogs.com/gif.latex?$Throughput_{alt}$" title="$Throughput_{alt}$" />
 method mentioned in 2.1. In Table
 [\[table:4\]](#table:4){reference-type="ref" reference="table:4"} the
 minimum, maximum and average time of a transaction is visualized. For 10
