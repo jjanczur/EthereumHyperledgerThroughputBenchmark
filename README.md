@@ -130,7 +130,7 @@ same experiment several times with different values of *N*.
   ---------- | ------- | --------- | ------- | ---------------------
   t2.micro   | 1       | 3.3 GHz   | 1 GiB   | Low to Moderate
 
-  *Parameters of the EC2 instances*
+  *Table 1: Parameters of the EC2 instances*
 
 In case of Ethereum, we created a private network with the
 Proof-of-Authority consensus algorithm. There are two nodes running on
@@ -216,20 +216,19 @@ Fig.[2](#fig:throughput2){reference-type="ref"
 reference="fig:throughput2"} throughput was measured using our own
 formula.
 
-**tbn-t0 \[s\]**   | **Thr. alt. \[tx/s\]**  | **Avg(tx/block)** | **Thr. \[tx/s\]**
------------------- | ----------------------- | ----------------- | -------------------
-*2.69*             | *3.72*                  | *10*              | *5*
-*2.79*             | *35.80*                 | *100*             | *50*
-*10.67*            | *93.72*                 | *200*             | *100*
-*99.82*            | *100.18*                | *204.08*          | *102.04*
-*1711.73*          | *58.42*                 | *117.1*           | *58.55*
-*8935.53*          | *54.76*                 | *109.53*          | *54.765*
-**AVG**            | ***57.77***             | ***123.45***      | ***61.73***
-**AVG filtered**   | ***76.77***             | ***157.68***      | ***78.84***
+**tx**    | **tbn-t0 \[s\]**   | **Thr. alt. \[tx/s\]**  | **Avg(tx/block)** | **Thr. \[tx/s\]**
+--------- | ------------------ | ----------------------- | ----------------- | -------------------
+*10*      | *2.69*             | *3.72*                  | *10*              | *5*
+*100*     | *2.79*             | *35.80*                 | *100*             | *50*
+*1000*    | *10.67*            | *93.72*                 | *200*             | *100*
+*10000*   | *99.82*            | *100.18*                | *204.08*          | *102.04*
+*100000*  | *1711.73*          | *58.42*                 | *117.1*           | *58.55*
+*489290*  | *8935.53*          | *54.76*                 | *109.53*          | *54.765*
+          | **AVG**            | ***57.77***             | ***123.45***      | ***61.73***
+          | **AVG filtered**   | ***76.77***             | ***157.68***      | ***78.84***
 
 
-  : ETH: Throughput measurement results. Block mined every
-  2s.[]{label="table:2"}
+  *Table 2: ETH: Throughput measurement results. Block mined every 2s.*
 
 Table [\[table:2\]](#table:2){reference-type="ref" reference="table:2"}
 presents the results of the throughput measurements. In ethereum private
@@ -247,15 +246,10 @@ Fig.[2](#fig:throughput2){reference-type="ref"
 reference="fig:throughput2"} results in similar numbers - average
 filtered throughput between 75-80 tx/s.
 
-![ETH: Throughput as average number of transactions in a block divided
-by the block
-frequency[]{label="fig:throughput1"}](Report/img/Throughput_ETH.png){#fig:throughput1
-width="75%"}
+*Figure 1: ETH: Throughput as average number of transactions in a block divided by the block frequency*
 
-![ETH: Throughput as total number of transactions divided by time from
-submitting the first transaction until mining the last
-block[]{label="fig:throughput2"}](Report/img/Throughputalt.png){#fig:throughput2
-width="75%"}
+*Figure 2: ETH: Throughput as total number of transactions divided by time from
+submitting the first transaction until mining the last block*
 
 In Fig. [3](#fig:txbig){reference-type="ref" reference="fig:txbig"} we
 present the number of transactions per block. It is clearly visible that
@@ -264,8 +258,7 @@ We have data for 1 million transactions as well. The results are the
 same as for 100 000 but the chart is less clear. That is why we have
 decided to present this one.
 
-![ETH: Block capacity in a higher blockchain load
-conditions[]{label="fig:txbig"}](Report/img/txmed.png){#fig:txbig width="75%"}
+*Figure 3:ETH: Block capacity in a higher blockchain load conditions*
 
 What is interesting is, that we wanted to observe the drop in the block
 capacity. This drop is presented in Fig.
@@ -274,9 +267,7 @@ think that this might be the result of an internal blockchain balancing
 but we could not proof that. That is why this problem needs further
 research.
 
-![ETH: Drop in the block
-capacity[]{label="fig:txsmall"}](Report/img/TxNumperBlockSmall.png){#fig:txsmall
-width="75%"}
+*Figure 4: ETH: Drop in the block capacity*
 
 \
 
@@ -292,18 +283,17 @@ be fitting in a block but the miner is not wasting its mining power to
 mine empty blocks. This setup looks more like BASE or ACID database
 where transactions are executed immediately.
 
-     **tbn-t0 \[s\]**   **Thr. \[tx/s\]**
-  -- ------------------ -------------------
-     *0.08*             *128.21*
-     *0.94*             *105.93*
-     *9.21*             *108.59*
-     *90.84*            *110.09*
-     *924.48*           *108.17*
-     **AVG**            ***112.20***
+**tbn-t0 \[s\]**  | **Thr. \[tx/s\]**
+----------------- | -------------------
+*0.08*            | *128.21*
+*0.94*            | *105.93*
+*9.21*            | *108.59*
+*90.84*           | *110.09*
+*924.48*          | *108.17*
+**AVG**           | ***112.20***
 
 
-  : ETH: Throughput measurement results. Mine on
-  demand[]{label="table:3"}
+  *Table 3: ETH: Throughput measurement results. Mine on demand*
 
 In Table [\[table:3\]](#table:3){reference-type="ref"
 reference="table:3"} we present the results of this new approach. In
@@ -314,8 +304,7 @@ throughput using the method with block frequency - 2.1. Average
 throughput in that setup has raised to in average 112,2 transactions per
 second with an 1,02 average number of transactions per block
 
-![ETH: throughput on a log
-scale[]{label="fig:tx0s"}](Report/img/Throughput0s.png){#fig:tx0s width="75%"}
+*Figure 5: ETH: throughput on a log scale*
 
 In this setup in Fig. [5](#fig:tx0s){reference-type="ref"
 reference="fig:tx0s"} we present the graph where we correlate the
@@ -329,8 +318,7 @@ clearly visible that in that setup miner submits on average 1
 transaction per block and that value is stable within the whole
 experiment.
 
-![ETH: Block capacity[]{label="fig:cap"}](Report/img/blockCap0s.png){#fig:cap
-width="75%"}
+*Figure 6: ETH: Block capacity*
 
 \
 
@@ -347,15 +335,14 @@ is below 1 second. The maximum time for 1000 transactions is at around
 25 secounds and it increases drastically to around 1000 seconds, if the
 transactions increase to 10000.
 
-     **Min \[s\]**   **Max \[s\]**   **Avg \[s\]**
-  -- --------------- --------------- ---------------
-     *0.436*         *0.632*         *0.530*
-     *0.379*         *0.644*         *0.475*
-     *0.387*         *25.557*        *0.572*
-     *0.359*         *999.583*       *3.457*
+**Min \[s\]**  | **Max \[s\]**  | **Avg \[s\]**
+-------------- | -------------- | ---------------
+*0.436*        | *0.632*        | *0.530*
+*0.379*        | *0.644*        | *0.475*
+*0.387*        | *25.557*       | *0.572*
+*0.359*        | *999.583*      | *3.457*
 
-  : Burrow: Min, Avg and Max execution time of a
-  transaction[]{label="table:4"}
+  *Table 4: ETH: Min, Avg and Max execution time of a transaction*
 
 The throughput for the test with 10 transactions is displayed in Fig.
 [\[fig:burrowtxs\]](#fig:burrowtxs){reference-type="ref"
