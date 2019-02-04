@@ -339,8 +339,7 @@ Hyperledger
 *Author: Julian*\
 In Hyperledger Burrow the throughput was measured using the
 <img src="https://latex.codecogs.com/gif.latex?$Throughput_{alt}$" title="$Throughput_{alt}$" />
-method mentioned in 2.1. In Table
-[\[table:4\]](#table:4){reference-type="ref" reference="table:4"} the
+method mentioned in 2.1. In Table 4 the
 minimum, maximum and average time of a transaction is visualized. For 10
 up to 1000 transactions the minimum and average time of one transaction
 is below 1 second. The maximum time for 1000 transactions is at around
@@ -357,22 +356,17 @@ transactions increase to 10000.
   *Table 4: ETH: Min, Avg and Max execution time of a transaction*
 
 The throughput for the test with 10 transactions is displayed in Fig.
-[\[fig:burrowtxs\]](#fig:burrowtxs){reference-type="ref"
-reference="fig:burrowtxs"} the upper left graph shows a more or less
+7 the upper left graph shows a more or less
 stable curve with only few a ups and downs and not much variation. The
-result for 100 (Fig.
-[\[fig:burrowtxs\]](#fig:burrowtxs){reference-type="ref"
-reference="fig:burrowtxs"} upper right) transactions has a similar
-outcome. Starting the benchmark with 1000 (Fig.
-[\[fig:burrowtxs\]](#fig:burrowtxs){reference-type="ref"
-reference="fig:burrowtxs"} lower left) or even 10000 (Fig.
-[\[fig:burrowtxs\]](#fig:burrowtxs){reference-type="ref"
-reference="fig:burrowtxs"} lower right) transactions, the variance of
+result for 100 (Fig. 7 upper right) transactions has a similar
+outcome. Starting the benchmark with 1000 (Fig. 7 lower left) or even 10000 (Fig. 7
+lower right) transactions, the variance of
 some of these measurements is extremly high. In the last test, the
-effect even intensifies with more time passing.\
+effect even intensifies with more time passing.
 
 ![ETH: Transactions and their execution
 time[]{label="fig:txsmall"}](Report/img/HyperAllInOne.png)
+
 *Figure 7: Burrow: Transactions and their execution time*
 
 The increase in the time needed to execute one transaction with a higher
@@ -385,8 +379,7 @@ done with 1000 transaction and a pool size of 10 and 150. Where the
 total execution time of the first one was around 20 minutes, the second
 one was below 4 minutes.\
 The calculated throughput for these four benchmarks is shown in Fig.
-[\[fig:burrowthroughput\]](#fig:burrowthroughput){reference-type="ref"
-reference="fig:burrowthroughput"}. It is apparent, that the throughput
+8 . It is apparent, that the throughput
 is decreasing the more transactions are sent. Where for the test with
 only 10 transactions it would sum up to above 80 transactions per
 second. The test with 10000 transactions resulted in less than 30
@@ -394,6 +387,7 @@ transactions per second.
 
 ![ETH: Transactions and their execution
 time[]{label="fig:txsmall"}](Report/img/Hyperledger.png)
+
 *Figure 8: Burrow: Throughput*
 
 Conclusion
