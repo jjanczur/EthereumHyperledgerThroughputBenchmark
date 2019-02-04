@@ -1,38 +1,18 @@
----
-abstract: |
-    In this experiment, we compared Ethereum and Hyperledger private
-    networks with regard to throughput for non-conflicting transactions,
-    i.e. transactions that do not cause double-spending. We proposed two
-    mathematical definitions of throughput and used them to compare both
-    systems. We set up the networks in similar conditions and provided them
-    with synthetically generated workload. We used custom tools to collect
-    relevant data from systems' logs. Finally, we came to the conclusion
-    that Ethereum, generally, shows more promising results. However, further
-    research will be needed for more profound analysis.
-bibliography: 'biblist.bib'
-csl: 'ieee.csl'
----
+Experiment report
 
-![image](Report/img/Logo.png)\
+Ethereum vs. Hyperledger
+Comparison of throughput for non-conflicting transactions
 
-Experiment report\
+In this experiment, we compared Ethereum and Hyperledger private
+networks with regard to throughput for non-conflicting transactions,
+i.e. transactions that do not cause double-spending. We proposed two
+mathematical definitions of throughput and used them to compare both
+systems. We set up the networks in similar conditions and provided them
+with synthetically generated workload. We used custom tools to collect
+relevant data from systems' logs. Finally, we came to the conclusion
+that Ethereum, generally, shows more promising results. However, further
+research will be needed for more profound analysis.
 
-------------------------------------------------------------------------
-
-\
-[Ethereum vs. Hyperledger]{.smallcaps}\
-[Comparison of throughput for non-conflicting transactions]{.smallcaps}\
-
-------------------------------------------------------------------------
-
-\
-\
-
-*Authors:*\
-Jacek Janczura Igor Molcean Julian Valentino Weigel Kim Janik Jasun
-Herter
-
-\
 
 Introduction
 ============
@@ -78,8 +58,10 @@ theoretically. Both are measured in transactions per second (Tx/s).
 **Proof-of-Authority** is an algorithm where only authorized nodes,
 called sealers or signers, can add blocks to chain. To make sure a
 malicious node can't do harm to the network, any signer can sign at most
-one of a number $\lfloor S/2 \rfloor + 1$ of consecutive blocks (where
-$S$ is the number of sealers). PoA algorithm used in Ethereum is called
+one of a number
+<img src="http://www.sciweavers.org/tex2img.php?eq=%5Clfloor%20S%2F2%20%5Crfloor%20%2B%201&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\lfloor S/2 \rfloor + 1" width="79" height="18" />
+of consecutive blocks (where
+*S* is the number of sealers). PoA algorithm used in Ethereum is called
 Clique [@clique].
 
 **Proof-of-Stake** is a consensus algorithm where decisions, whether to
@@ -99,21 +81,21 @@ during the experiment. We will start with the formal mathematical
 definition of the main metric, continue with the experimental set up and
 finish with the procedures for data collection.
 
-Transaction throughput {#throughput}
+Transaction throughput
 ----------------------
 
 In our experiment, we defined throughput as average number of
 transactions in a block divided by the block frequency:
 
-$$Throughput = \frac{1/N \sum_{b=1}^{N} T_b}{F}$$
+<img src="http://www.sciweavers.org/tex2img.php?eq=Throughput%20%3D%20%5Cfrac%7B1%2FN%20%5Csum_%7Bb%3D1%7D%5E%7BN%7D%20T_b%7D%7BF%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="Throughput = \frac{1/N \sum_{b=1}^{N} T_b}{F}" width="231" height="50" />
 
 where
 
--   $N$ is total number of transactions submitted
+-   *N* is total number of transactions submitted
 
--   $T_b$ is number of transactions contained in block $b$
+-   *Tb* is number of transactions contained in block *b*
 
--   $F$ is block frequency
+-   *F* is block frequency
 
 Other definitions can also be found in literature. We decided to compare
 one of them with ours. It is formulated as follows: transaction
@@ -122,43 +104,40 @@ blockchain System Under Test (further SUT) in a defined time period
 [@hyperledger_paper]. This definition may be presented as the following
 formula:
 
-$$Throughput_{alt} = \frac{N}{t_{b_N} - t_{T_0}}$$
+<img src="http://www.sciweavers.org/tex2img.php?eq=Throughput_%7Balt%7D%20%3D%20%5Cfrac%7BN%7D%7Bt_%7Bb_N%7D%20-%20t_%7BT_0%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="Throughput_{alt} = \frac{N}{t_{b_N} - t_{T_0}}" width="212" height="47" />
 
 where
 
--   $N$ is total number of submitted transactions submitted
+-   *N* is total number of submitted transactions submitted
 
--   $t_{b_N}$ is the commit time of the last block
+-   *tbN* is the commit time of the last block
 
--   $t_{T_0}$ is the submission time of the initial transaction
+-   *tT0* is the submission time of the initial transaction
 
 Experimental set up
 -------------------
 
 The experimental setup consists of the two private blockchain networks
 deployed in a controlled distributed environment. As such environment we
-used several Amazon AWS EC2 instances, their parameters are presented in
-Table [\[instance\_params\]](#instance_params){reference-type="ref"
-reference="instance_params"}. Each node runs on its own Virtual Machine
+used several Amazon AWS EC2 instances, their parameters are presented in the
+Table below. Each node runs on its own Virtual Machine
 (further VM) but all VMs are located in the same subnetwork to minimize
 the effect of network latencies within the experiment. For simplicity,
 both networks were deployed with just one mining node. We conducted the
-same experiment several times with different values of $N$.
+same experiment several times with different values of *N*.
 
-  Type       Cores   CPU       RAM     Network performance
-  ---------- ------- --------- ------- ---------------------
-  t2.micro   1       3.3 GHz   1 GiB   Low to Moderate
+  Type       | Cores   | CPU       | RAM     | Network performance
+  ---------- | ------- | --------- | ------- | ---------------------
+  t2.micro   | 1       | 3.3 GHz   | 1 GiB   | Low to Moderate
 
-  : Parameters of the EC2 instances [@ec2_params]
-
-[\[instance\_params\]]{#instance_params label="instance_params"}
+  *Parameters of the EC2 instances*
 
 In case of Ethereum, we created a private network with the
 Proof-of-Authority consensus algorithm. There are two nodes running on
 Geth [@geth]: Node 1 is sealing blocks and Node 2 is submitting
 party-to-party transactions to the blockchain. In order to enable nodes'
 communication, we used the so-called Bootnode [@bootnode]. The block
-frequency $F$ was set to 2 seconds. In order to guarantee that all
+frequency *F* was set to 2 seconds. In order to guarantee that all
 transactions are non-conflicting, i.e. they do not potentially cause
 double spending, we preallocated enough Ether on the account used as a
 transaction sender.
@@ -196,12 +175,11 @@ In case of Ethereum, all necessary data could be found directly in the
 logs generated by Geth. For this purpose, we developed a parser that
 went through the log files extracting relevant information and storing
 it in a CSV file. By relevant information, we mean the number of
-transactions for each block ($T_b$) as well as timestamps of the first
-submitted transaction ($t_{T_0}$) and last committed block ($t_{b_N}$).
-Knowing block frequency ($F$), total number of transactions ($N$) and
+transactions for each block (*Tb*) as well as timestamps of the first
+submitted transaction (*tT0*) and last committed block (*tbN*).
+Knowing block frequency (*F*), total number of transactions (*N*) and
 being able to parse everything else, it became trivial to calculate
-throughput according to the definitions presented in subsection
-[2.1](#throughput){reference-type="ref" reference="throughput"}.\
+throughput according to the definitions presented before.
 For Hyperledger Burrow, the logs were used as well. The arrival and
 execution timestamps as well as the hash of a received transaction were
 logged. With an own written parser, these timestamps could be extracted
